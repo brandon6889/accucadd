@@ -1,0 +1,115 @@
+;Accucadd network text
+;Blank lines and comment lines starting with a ';' are ignored
+
+;The format of this file is:
+;(programming label - please do not change)
+;(string number)
+;(maximum length of text)
+;"(text)"
+
+;Fields of information may be separated by spaces, tabs or carriage returns.
+;Entries need not be in string number order.
+;A whole entry may be deleted if it is no longer used.
+;The maximum length of a string should not be changed.
+
+;No .BIN file is created for this file.
+
+STRN_BLANK			0	2
+"_"
+;An identifier for this file
+
+STRN_STAMP_EXISTS		1	70
+"There is a currently active session under this user ID!"
+;User is attempting to start Accucadd with user id already in use.
+
+STRN_BAD_ID			2	50
+"Identification failure.\n"
+;The identification (name or number) specified by user has not been installed.
+
+STRN_ENTER_ID			3	50
+"Please enter user identification: "
+;Start-up prompt when running from global directory.
+
+STRN_BAD_GDIR			4	50
+"Can't access global directory : %s"
+;The installed global directory is not accessible
+
+STRN_BAD_UDIR			5	50
+"Can't access user directory : %s"
+;The installed user directory is not accessible
+
+STRN_STAMP_WARN			6	70
+"Do NOT attempt to run two sessions with the same user ID."
+;User is attempting to run Accucadd with user id already in use.
+
+STRN_NON_NETWORKED		7	15
+"NON-NETWORKED"
+;User name assigned at start up if not networked.
+
+STRN_REASSIGN_GLOBAL		8	80
+"Cannot access GLOBAL DIRECTORY - reassigning to local directory\n"
+;Running local EXE without access to network drives.
+
+STRN_NO_PCNAME			9	20
+"Not set        "
+;User name assigned at start up if networked but PC name not set.
+
+STRN_CANT_ACCESS1  		10	80
+"Cannot access %s."
+;Network can't access a file for reasons other than locking.
+
+STRN_CANT_ACCESS2  		11	80
+"Time-out: %s in use by %s - user no: %d"
+;Network can't access a file because of locking.
+
+STRN_CANT_ACCESS3  		12	80
+"Cannot access directory %s for %s"
+;Network can't access directory because of restricted permissions.
+
+STRN_NET_READING  		13	15 
+"Error reading"
+;Network access failure for reading
+
+STRN_NET_WRITING		14	15
+"Error writing"
+;Network access failure for writing
+
+STRN_SYS_ERROR			15	40
+"Operating System Error"
+;String used for showing operating system error codes
+
+STRN_SET_GLOBAL			16	40
+"Set Global Directory"
+;Title for dialog requesting qlobal directory
+
+STRN_CREATE_DIR			17	40
+"Global directory does not exist: Create?"
+;Header for Machine Name in network users list 
+
+STRN_ERROR_CREATE_DIR		18	40
+"Could not create directory %s"
+;Error message if directory could not be created
+
+STRN_ID_USED			19	40
+"New id already in use"
+;User has changed id to one already used 
+
+STRN_ERROR_OPEN_WRITING		20	40
+"Could not open %s for writing"
+;Error message if file could not be written (Write protected?)
+
+STRN_USERS_NUMBER		21	8
+"Number"		
+;Header for User Id in network users list 
+
+STRN_USERS_MACHINE		22	16
+"Machine Name"
+;Header for Machine Name in network users list 
+
+STRN_USERS_NAME			23	16
+"User Name"
+;Header for User Name in network users list 
+
+STRN_NET_FILES_FOUND		24	80
+"Network files found for Global directory"
+;Message in pathname dialog if global directory files are found

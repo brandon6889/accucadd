@@ -1,0 +1,1274 @@
+:Base ACCUCADD.hlp>main
+1 INTRODUCTION
+2 Overview
+3 Overview=Overview1
+3 ACCUCADD Family
+4 ACCUCADD Family=ACCUCADDFamily
+4 ACCUCADD=ACCUCADD1
+4 ACCUCADD=ACCUCADD2
+3 About this manual
+4 About this manual=Aboutthismanual
+3 ACCUCADD Overview
+4 ACCUCADD Overview=ACCUCADDOverview
+3 A library index:
+4 A library index:=Alibraryindex.
+3 New Data
+4 New Data=NewData1
+3 Inserts
+4 Inserts=Inserts1
+4 Why use Inserts?=WhyuseInserts.
+3 Drawing
+4 Drawing=Drawing
+3 Labelling
+4 Labelling=Labelling
+3 Layers and Colours
+4 Layers and Colours=LayersandColours
+3 Editing
+4 Editing=Editing1
+3 Networking/Machine-sharing
+4 Networking/Machine-sharing=Networking.Machine.sharing
+3 Output
+4 Output=Output1
+3 Drawing exchange
+4 Drawing exchange=Drawingexchange
+3 Viewing
+4 Viewing=Viewing
+3 Technical drawing
+4 Technical drawing=Technicaldrawing
+3 Dimensioning
+4 Dimensioning=Dimensioning1
+3 How Can It Help?
+4 How Can It Help?=HowCanItHelp.
+3 Organisation
+4 Organisation=Organisation
+3 Layering
+4 Layering=Layering
+3 Changing
+4 Changing=Changing
+3 Precision
+4 Precision=Precision1
+2 Customisation
+3 Customisation=Customisation
+2 GETTING STARTED
+3 GETTING STARTED=GETTINGSTARTED
+3 What do I need?=WhatdoIneed.
+3 Setting up the computer
+4 Setting up the computer=Settingupthecomputer
+4 Enough memory?=Enoughmemory.
+4 Microsoft Windows=MicrosoftWindows
+4 Security Key=SecurityKey
+3 Terminology
+4 Terminology=Terminology
+3 Installing ACCUCADD
+4 Installing ACCUCADD=InstallingACCUCADD
+3 Running ACCUCADD
+4 Running ACCUCADD=RunningACCUCADD1
+3 Leaving ACCUCADD
+4 Leaving ACCUCADD=LeavingACCUCADD
+1 OPERATION, ORIENTATION AND NETWORKING
+2 OPERATION
+3 OPERATION=OPERATION1
+3 Using ACCUCADD=UsingACCUCADD
+3 Single-user ACCUCADD=Single.userACCUCADD
+3 Directories=Directories1
+3 Running ACCUCADD=RunningACCUCADD2
+3 The ACCUCADD display=TheACCUCADDdisplay
+3 Communicating with ACCUCADD=CommunicatingwithACCUCADD
+3 Buttons and clicking=Buttonsandclicking
+3 Selecting=Selecting
+3 Keyboard=Keyboard
+3 ENTER=ENTER
+3 Operating the Menus=OperatingtheMenus
+3 Program Bar=ProgramBar
+3 Status Reporting=StatusReporting
+3 Layer(s)=Layer.s.
+3 Colour(s)=Colour.s.
+3 Report box=Reportbox
+3 Time-of-day=Time.of.day
+3 Unit(s)=Unit.s.
+3 Scale=Scale
+3 Paper size=Papersize
+3 X-Y Coordinates=X.YCoordinates
+3 Getting Help=GettingHelp
+3 Windows=Windows
+3 Icons=Icons1
+3 Palettes
+4 Palettes=Palettes
+4 Numbers on Palettes=NumbersonPalettes
+4 Moving Palettes=MovingPalettes
+3 Keyboard Control
+4 Keyboard Control=KeyboardControl
+3 Keyboard Input
+4 Keyboard Input=KeyboardInput1
+3 The Escape Key
+4 The Escape Key=TheEscapeKey
+3 Mouse ESC
+4 Mouse ESC=MouseESC
+3 Using ESC
+4 Using ESC=UsingESC
+3 Keyboard selection
+4 Keyboard selection=Keyboardselection
+4 Basic selection=Basicselection
+3 PrintScreen
+4 PrintScreen=PrintScreen
+2 ORIENTATION
+3 ORIENTATION=ORIENTATION
+3 Keyboard Input
+4 Keyboard Input=KeyboardInput2
+4 Entering sizes=Enteringsizes1
+4 Formulas=Formulas1
+4 Entering Coordinates=EnteringCoordinates
+4 Library index selection=Libraryindexselection
+3 Computer graphics
+4 Computer graphics=Computergraphics
+4 Vector data=Vectordata
+4 Raster data=Rasterdata
+3 Contents of a drawing
+4 Contents of a drawing=Contentsofadrawing
+4 Entities=Entities
+4 Dimensions=Dimensions1
+4 Inserts=Inserts2
+4 New Data,Insert Data=NewData.InsertData
+4 Attributes=Attributes1
+3 Drawing size and precision
+4 Drawing size and precision=Drawingsizeandprecision
+4 Drawing data storage=Drawingdatastorage
+3 Layers
+4 Layers=Layers1
+4 Hidden Layers=HiddenLayers
+4 Coloured Layers=ColouredLayers
+4 Active Layer=ActiveLayer
+4 Dimensioning=Dimensioning2
+4 ACCUCADD Layer Table=ACCUCADDLayerTable
+3 Colours
+4 Colours=Colours1
+4 Assigning Colours=AssigningColours
+3 Snap Points, Grids and Traps
+4 Snap Points, Grids and Traps=SnapPoints.GridsandTraps
+4 Data Snaps=DataSnaps
+4 'Magnetic' snap points=.Magnetic.snappoints
+4 Snap points & editing=Snappoints.editing
+4 Manual snap points=Manualsnappoints
+4 The snap list=Thesnaplist
+4 Grids=Grids
+4 Traps=Traps
+4 Limits=Limits
+4 Priority=Priority
+4 Range=Range
+3 The Library
+4 The Library=TheLibrary
+4 Warning:=Warning.1
+4 Inserts=Inserts3
+2 NETWORKING
+3 NETWORKING=NETWORKING
+3 Network Terminology
+4 Network Terminology=NetworkTerminology
+4 Disk drives=Diskdrives
+4 Warning:=Warning.2
+4 Printers=Printers
+4 Network cards and cables=Networkcardsandcables
+4 Network software=Networksoftware
+4 Clashes=Clashes
+4 Security=Security
+4 Permission=Permission
+3 ACCUCADD Networking
+4 ACCUCADD Networking=ACCUCADDNetworking
+4 ACCUCADD user IDs=ACCUCADDuserIDs
+4 Drawing Booking=DrawingBooking
+4 Machine-sharing ACCUCADD=Machine.sharingACCUCADD
+4 Directories=Directories2
+4 Directory names=Directorynames
+4 Installations=Installations
+4 Warning:=Warning.3
+3 Starting Networked ACCUCADD
+4 Starting Networked ACCUCADD=StartingNetworkedACCUCADD
+4 No Network=NoNetwork
+1 FILE
+2 New Page=NewPage
+2 Close Page=ClosePage
+2 Backup
+3 Backup=Backup
+3 Frequency=Frequency
+3 Backup Now=BackupNow
+3 Load Backup=LoadBackup
+3 Delete Backups=DeleteBackups
+3 Conventions:=Conventions.1
+3 Advanced:=Advanced.1
+2 Print
+3 Print=Print
+3 SCALE TO FIT=SCALETOFIT
+3 RGB OUTPUT=RGBOUTPUT
+3 WINDOWS LINESTYLES=WINDOWSLINESTYLES
+3 PRINT COLOURS=PRINTCOLOURS
+3 LINEWEIGHTS=LINEWEIGHTS
+2 Viewprint
+3 Viewprint=Viewprint
+3 Details:=Details.1
+2 Print Setup
+3 Print Setup=PrintSetup
+2 Exit (AccuCADD)
+3 Exit (AccuCADD)=Exit.AccuCADD.
+1 CLIPBOARD
+2 Metafile=Metafile
+2 Drawing Data
+3 Drawing Data=DrawingData
+3 ACCUCADD AS OLE-SERVER=ACCUCADDASOLE.SERVER
+3 EDIT OBJECT=EDITOBJECT
+3 EXIT ACCUCADD=EXITACCUCADD
+1 LIBRARY
+2 LOAD (Drawing)
+3 LOAD (Drawing)=LOAD.Drawing.
+3 Preparations=Preparations
+3 PICK from INDEX=PICKfromINDEX1
+3 Loading:=Loading.
+3 Booking:=Booking.1
+3 Details:=Details.2
+3 Loading by keyboard input=Loadingbykeyboardinput
+3 Index Position
+4 Index Position=IndexPosition
+4 Index Locations=IndexLocations
+3 Conventions:
+4 Conventions:=Conventions.2
+2 FILE (Drawing)
+3 FILE (Drawing)=FILE.Drawing.
+3 Information fields=Informationfields
+3 BOX SIZE=BOXSIZE
+3 ADD INDEX=ADDINDEX1
+3 NEW NAME=NEWNAME
+3 NEXT=NEXT
+3 PREVIOUS=PREVIOUS
+3 CATALOGUE=CATALOGUE
+3 PRINT INDEX PAGE=PRINTINDEXPAGE
+3 BOOK DRAWING=BOOKDRAWING
+3 SEARCH TEXT=SEARCHTEXT
+3 EXIT=EXIT
+3 Operation=Operation1
+3 Simple FILEing
+4 Simple FILEing=SimpleFILEing
+4 Adding a label=Addingalabel
+3 Over FILE a drawing
+4 Over FILE a drawing=OverFILEadrawing
+4 OverFILEing=OverFILEing
+4 Valid Overfile positions=ValidOverfilepositions
+4 Effects of Overfile=EffectsofOverfile
+4 Unbooking=Unbooking
+4 Successful filing=Successfulfiling
+3 Details:
+4 Details:=Details.3
+3 Handles
+4 Handles=Handles
+3 Layers
+4 Layers=Layers2
+3 Inserts
+4 Inserts=Inserts4
+3 Multiple Libraries
+4 Multiple Libraries=MultipleLibraries1
+3 Warnings:
+4 Warnings:=Warnings.1
+3 Keep Image
+4 Keep Image=KeepImage
+3 Advanced:
+4 Advanced:=Advanced.2
+3 Keyboard controls
+4 Keyboard controls=Keyboardcontrols
+2 BOOK & LOG
+3 BOOK & LOG=BOOK.LOG
+3 Principles=Principles1
+3 Overfiling=Overfiling
+3 Using Booking=UsingBooking
+3 Sample strategies=Samplestrategies
+3 Details:=Details.4
+3 Warnings:=Warnings.2
+3 Advanced:=Advanced.3
+3 Logging=Logging
+2 MAINTENANCE
+3 MAINTENANCE=MAINTENANCE
+3 Delete Index=DeleteIndex
+3 Warnings:=Warnings.3
+3 Booked Drawings=BookedDrawings
+3 Common Index=CommonIndex1
+3 Copy Index
+4 Copy Index=CopyIndex
+4 "This index ?"=.Thisindex..
+4 "Components exist on destination library"=.Componentsexistondestinationlibrary.
+4 "Overwrite existing inserts that may be used by other drawings ?"=.Overwriteexistinginsertsthatmaybeusedbyotherdrawings..
+4 Booked Inserts=BookedInserts
+4 "Index already exists"=.Indexalreadyexists.
+4 "Overwrite existing indexpage that may be used by other drawings ?"=.Overwriteexistingindexpagethatmaybeusedbyotherdrawings..
+4 Booking:=Booking.2
+4 Copying...=Copying...
+4 Warnings=Warnings
+2 ADD INDEX
+3 ADD INDEX=ADDINDEX2
+3 Networking/machine-sharing=Networking.machine.sharing1
+3 Diskette libraries=Diskettelibraries
+3 Names and Numbers=NamesandNumbers
+3 Warning:=Warning.4
+2 SET PATHNAME
+3 SET PATHNAME=SETPATHNAME
+3 Shared libraries=Sharedlibraries
+3 Multiple libraries=Multiplelibraries
+3 Conventions:=Conventions.3
+3 Warnings:=Warnings.4
+2 IMPORT RDF
+3 IMPORT RDF=IMPORTRDF
+3 RDF versions=RDFversions
+3 Operation:=Operation.1
+3 Correct File?=CorrectFile.
+3 RDF versions 4 and 5=RDFversions4and5
+3 Re-assigning Layers=Re.assigningLayers
+3 Large files=Largefiles
+3 Insert handling=Inserthandling
+3 Explode All Inserts?=ExplodeAllInserts.
+3 FILEing data,Disorganized data=FILEingdata.Disorganizeddata
+3 ACCUCADD data
+4 ACCUCADD data=ACCUCADDdata
+4 Organised data=Organiseddata
+4 Booking and Logging=BookingandLogging1
+4 Dimensions=Dimensions2
+4 Advanced:=Advanced.4
+2 EXPORT RDF
+3 EXPORT RDF=EXPORTRDF
+3 Booking and Logging=BookingandLogging2
+2 GROUP EXPORT
+3 GROUP EXPORT=GROUPEXPORT
+2 IMPORT DXF
+3 IMPORT DXF=IMPORTDXF
+3 Concepts:=Concepts.
+3 Operation:=Operation.2
+3 DXF drawing unit=DXFdrawingunit
+3 Layer-, Line weight-, Colour- and Line style Mapping
+4 Layer-, Line weight-, Colour- and Line style Mapping=Layer..Lineweight..Colour.andLinestyleMapping
+4 Layers=Layers3
+4 Line weights=Lineweights
+4 Colours=Colours2
+4 Line styles=Linestyles
+3 Reports
+4 Reports=Reports1
+3 Scripts
+4 Scripts=Scripts
+4 Script Defaults=ScriptDefaults
+3 DXF versions
+4 DXF versions=DXFversions
+4 DXF 2.17=DXF2.17
+3 DXF to RDF translation rules
+4 DXF to RDF translation rules=DXFtoRDFtranslationrules
+4 Drawing Units=DrawingUnits
+4 DXF Layers=DXFLayers
+4 DXF Attributes=DXFAttributes
+4 Blocks and Inserts=BlocksandInserts
+4 DXF Entity Conversion=DXFEntityConversion
+4 DXF Text=DXFText
+4 Others=Others
+2 EXPORT DXF
+3 EXPORT DXF=EXPORTDXF
+3 Operation:=Operation.3
+3 RDF to DXF translation rules
+4 RDF to DXF translation rules=RDFtoDXFtranslationrules
+4 Entity Translation=EntityTranslation
+4 Inserts=Inserts5
+4 Dimension Symbols=DimensionSymbols
+2 HPGL Import
+3 HPGL Import=HPGLImport
+3 HP-GL to RDF translation=HP.GLtoRDFtranslation
+2 LIBRARY UTILITIES
+3 LIBRARY UTILITIES=LIBRARYUTILITIES
+3 Referenced Inserts
+4 Referenced Inserts=ReferencedInserts
+4 Now=Now
+4 Library Change=LibraryChange
+4 Regenerate View=RegenerateView
+4 Page Change=PageChange
+4 Isolate Insert=IsolateInsert
+4 View Change=ViewChange
+4 Warn Of Update=WarnOfUpdate
+3 Permissions
+4 Permissions=Permissions
+3 User Booked
+4 User Booked=UserBooked
+3 Index Booking
+4 Index Booking=IndexBooking
+3 Network Access
+4 Network Access=NetworkAccess
+2 LOG MAINTENANCE
+3 LOG MAINTENANCE=LOGMAINTENANCE
+3 Delete Log=DeleteLog
+3 Purge To Date=PurgeToDate
+3 Edit Log=EditLog
+3 Conventions:=Conventions.4
+2 ATTRIBUTES
+3 ATTRIBUTES=ATTRIBUTES1
+3 INTRODUCTION=INTRODUCTION2
+3 Principles=Principles2
+3 Attributes=Attributes2
+3 Reports
+4 Reports=Reports2
+4 List format=Listformat
+4 Count format=Countformat
+4 Control File=ControlFile
+3 "Attributes ?"
+4 "Attributes ?"=.Attributes..
+3 OPERATION
+4 OPERATION=OPERATION2
+4 Running ACCUCADD-DATA=RunningACCUCADD.DATA
+3 CREATE ATTRIBUTES
+4 CREATE ATTRIBUTES=CREATEATTRIBUTES
+4 Principles=Principles3
+4 Extraction=Extraction
+4 Database use=Databaseuse
+4 Creation=Creation
+4 Inserts=Inserts6
+4 Field Sequence.=FieldSequence.
+4 Text Styles=TextStyles
+4 Layers=Layers4
+4 Layered Inserts=LayeredInserts1
+4 Hiding Attributes=HidingAttributes
+4 Comments=Comments
+4 Ignoring comments=Ignoringcomments
+4 Large comments=Largecomments
+4 Variable substitution=Variablesubstitution
+3 Applications
+4 Applications=Applications
+3 Simple Attributes
+4 Simple Attributes=SimpleAttributes
+3 Part numbers
+4 Part numbers=Partnumbers
+3 NC and translation
+4 NC and translation=NCandtranslation
+4 Advanced=Advanced1
+3 Attribute Templates
+4 Attribute Templates=AttributeTemplates
+3 EDIT: TEXT
+4 EDIT: TEXT=EDIT.TEXT
+3 Identifying RDF files
+4 Identifying RDF files=IdentifyingRDFfiles
+2 PREFERENCES
+3 PREFERENCES=PREFERENCES
+3 Quotes=Quotes
+3 Comment Character=CommentCharacter
+3 Sort Field Number=SortFieldNumber
+3 New field separator=Newfieldseparator
+3 Totals (Yes/No)=Totals.Yes.No.
+3 Units=Units1
+3 Precision=Precision2
+3 Output
+4 Output=Output2
+4 Append=Append
+3 Extract
+4 Extract=Extract
+3 Examples
+4 Examples=Examples
+4 A simple List report produces:=AsimpleListreportproduces.
+4 A Count report produces:=ACountreportproduces.
+4 Sorting using the first field (Part type) produces:=Sortingusingthefirstfield.Parttype.produces.
+4 Sorting by price produces:=Sortingbypriceproduces.
+4 Using Quotes in a simple List report produces:=UsingQuotesinasimpleListreportproduces.
+4 Using a comma as the field separator then produces:=Usingacommaasthefieldseparatorthenproduces.
+4 If you use the Append control, two different reports can be placed in the same file, thus:=IfyouusetheAppendcontrol.twodifferentreportscanbeplacedinthesamefile.thus.
+3 PARTS LIST
+4 PARTS LIST=PARTSLIST
+3 DATABASE
+4 DATABASE=DATABASE1
+4 Principles=Principles4
+4 Requirements=Requirements
+4 Database systems=Databasesystems
+4 Extracting Attributes=ExtractingAttributes
+3 COORDINATES
+4 COORDINATES=COORDINATES
+4 Altering the labels=Alteringthelabels
+4 Alternative techniques=Alternativetechniques
+3 GLOSSARY
+4 GLOSSARY=GLOSSARY
+4 ATTRIBUTES=ATTRIBUTES2
+4 CNC=CNC
+4 COMMENT=COMMENT
+4 DATABASE=DATABASE2
+4 DRAWING ATTRIBUTES=DRAWINGATTRIBUTES
+4 FIELD=FIELD
+4 G-CODES=G.CODES
+4 NC=NC
+4 RDF=RDF
+4 RELATIONAL=RELATIONAL
+4 REPORT=REPORT
+4 RS-274=RS.274
+4 VARIABLES=VARIABLES
+2 OUTPUT
+3 OUTPUT=OUTPUT
+3 Operation
+4 Operation=Operation2
+4 File name extension=Filenameextension
+4 Print output files=Printoutputfiles
+4 Advanced=Advanced2
+4 Count Reports=CountReports
+4 List Reports=ListReports
+4 Sorted Reports=SortedReports
+4 Too Many Inserts=TooManyInserts
+1 LIBRARY MANAGEMENT
+2 Overview
+3 Overview=Overview2
+3 Warnings:=Warnings.5
+2 Concepts
+3 Concepts=Concepts
+3 New Data=NewData2
+3 Drawings,Inserts=Drawings.Inserts
+3 Insert Data
+4 Insert Data=InsertData
+4 Nesting=Nesting
+4 Composite,Component=Composite.Component
+3 Data format
+4 Data format=Dataformat
+3 Updating
+4 Updating=Updating
+3 Overfile
+4 Overfile=Overfile
+3 ISOLATE and Local Update
+4 ISOLATE and Local Update=ISOLATEandLocalUpdate
+3 Working with Global Updates
+4 Working with Global Updates=WorkingwithGlobalUpdates
+3 External components
+4 External components=Externalcomponents
+3 Common Index
+4 Common Index=CommonIndex2
+3 Phantoms
+4 Phantoms=Phantoms
+3 False Images
+4 False Images=FalseImages
+2 Management techniques
+3 Management techniques=Managementtechniques
+3 Index Numbers=IndexNumbers
+3 Insert Management
+4 Insert Management=InsertManagement
+4 Version changes=Versionchanges
+4 Temporary Symbol sets=TemporarySymbolsets
+4 Archiving Projects=ArchivingProjects
+4 Recycling Indexes=RecyclingIndexes
+4 Blanking Indexes=BlankingIndexes
+3 Transporting drawings
+4 Transporting drawings=Transportingdrawings
+3 Multiple Libraries
+4 Multiple Libraries=MultipleLibraries2
+3 Moving between libraries,Changing Path
+4 Moving between libraries,Changing Path=Movingbetweenlibraries.ChangingPath
+3 Using Multiple Libraries
+4 Using Multiple Libraries=UsingMultipleLibraries
+3 Advanced:
+4 Advanced:=Advanced.5
+2 Backups
+3 Backups=Backups
+3 Why Backups?=WhyBackups.
+3 FILE: BACKUP=FILE.BACKUP
+3 Backup warnings:=Backupwarnings.
+3 Backup techniques=Backuptechniques
+3 Backup planning=Backupplanning
+2 Function descriptions
+3 Function descriptions=Functiondescriptions
+3 DRAW: DRAG INSERT,DRAW: FRAME INSERT=DRAW.DRAGINSERT.DRAW.FRAMEINSERT
+3 Limits:=Limits.1
+3 DRAW: COPY=DRAW.COPY
+3 EDIT: CHANGE,EDIT: MOVE,EDIT: FIT INSERT=EDIT.CHANGE.EDIT.MOVE.EDIT.FITINSERT
+3 EDIT: ISOLATE=EDIT.ISOLATE
+3 EDIT: EXPLODE=EDIT.EXPLODE
+3 LIBRARY: FILE=LIBRARY.FILE
+3 Booking:=Booking.3
+3 Successful FILE=SuccessfulFILE
+3 Changing Path=ChangingPath
+3 FILEing Inserts=FILEingInserts
+3 LIBRARY: LOAD=LIBRARY.LOAD
+3 LIBRARY: IMPORT RDF=LIBRARY.IMPORTRDF
+3 LIBRARY: SET PATH=LIBRARY.SETPATH
+3 LIBRARY: ADD INDEX=LIBRARY.ADDINDEX
+3 LIBRARY: EXPORT RDF=LIBRARY.EXPORTRDF
+3 LIBRARY: MAINTENANCE: DELETE INDEX=LIBRARY.MAINTENANCE.DELETEINDEX
+3 LIBRARY: MAINTENANCE: COPY INDEX
+4 LIBRARY: MAINTENANCE: COPY INDEX=LIBRARY.MAINTENANCE.COPYINDEX
+4 Components:=Components.
+4 The copied Index:=ThecopiedIndex.
+3 Booking:
+4 Booking:=Booking.4
+1 SETTINGS
+2 SAVE SETUP=SAVESETUP
+2 PAPER
+3 PAPER=PAPER
+3 Conventions:=Conventions.5
+3 Size and Scale Conventions=SizeandScaleConventions
+3 Hints:=Hints.1
+3 Advanced:=Advanced.6
+2 SCALE
+3 SCALE=SCALE
+3 Using Units=UsingUnits
+3 Details:=Details.5
+3 Effects of Scale=EffectsofScale
+3 Warning:=Warning.5
+3 Advanced:=Advanced.7
+3 Limits:=Limits.2
+2 UNITS
+3 UNITS=UNITS
+3 Details:=Details.6
+3 Advanced:=Advanced.8
+2 PRECISION
+3 PRECISION=PRECISION
+3 Length=Length
+3 Zero=Zero
+3 Angle=Angle
+3 Angle direction clockwise=Angledirectionclockwise
+3 Details:=Details.7
+2 LAYER TABLE
+3 LAYER TABLE=LAYERTABLE
+3 A Standard Layer Table=AStandardLayerTable
+3 Editing=Editing2
+3 Altering the Layer Table=AlteringtheLayerTable
+3 Marking=Marking
+3 DISPLAY
+4 DISPLAY=DISPLAY
+4 Off=Off
+4 On=On
+4 Active=Active
+4 Only=Only
+3 COLOUR
+4 COLOUR=COLOUR
+3 LStyle
+4 LStyle=LStyle
+3 LWidth
+4 LWidth=LWidth
+3 A - Attribute-Layer
+4 A - Attribute-Layer=A.Attribute.Layer
+3 C
+4 C=C
+3 LAYER, Creating Layers
+4 LAYER, Creating Layers=LAYER.CreatingLayers
+4 LAYER NAME=LAYERNAME
+3 Deleting Layers
+4 Deleting Layers=DeletingLayers
+3 Details:
+4 Details:=Details.8
+3 Status Bar (entering a Layer number)
+4 Status Bar (entering a Layer number)=StatusBar.enteringaLayernumber.
+3 Automatic Addition
+4 Automatic Addition=AutomaticAddition
+3 Only Layers in Drawing
+4 Only Layers in Drawing=OnlyLayersinDrawing
+3 Displaying changes
+4 Displaying changes=Displayingchanges
+3 LAYER TABLE: FILES
+4 LAYER TABLE: FILES=LAYERTABLE.FILES
+4 Default Layer Table=DefaultLayerTable
+4 Loading=Loading
+4 Saving=Saving
+4 Copy Layer Table to clipboard=CopyLayerTabletoclipboard
+4 Details:=Details.9
+4 Applications:=Applications.
+4 Conventions:=Conventions.6
+4 Ad-hoc Layers=Ad.hocLayers
+4 Networking/machine-sharing=Networking.machine.sharing2
+2 SNAPS
+3 SNAPS=SNAPS
+3 Details:=Details.10
+3 Advanced:=Advanced.9
+3 Snap List controls
+4 Snap List controls=SnapListcontrols
+4 Save snaps on File=SavesnapsonFile
+4 Rebuild snaps on Load=RebuildsnapsonLoad
+4 Details:=Details.11
+2 COLOURS
+3 COLOURS=COLOURS
+2 SET DIGITIZER
+3 SET DIGITIZER=SETDIGITIZER
+2 BORDER
+3 BORDER=BORDER
+1 DRAW
+2 KEYBOARD INPUT
+3 KEYBOARD INPUT=KEYBOARDINPUT
+3 Entering sizes=Enteringsizes2
+3 Shortcuts
+4 Shortcuts=Shortcuts
+4 Suggested input=Suggestedinput
+3 Updating (F11 key)
+4 Updating (F11 key)=Updating.F11key.
+3 Input Formats
+4 Input Formats=InputFormats
+4 Angles=Angles
+4 Distances=Distances
+4 Angle conventions=Angleconventions
+4 Units=Units2
+4 Decimal Numbers=DecimalNumbers
+4 Exponents=Exponents
+4 Formulas=Formulas2
+4 Units in Formulas=UnitsinFormulas
+4 Trigonometric functions=Trigonometricfunctions
+4 Units and Precision=UnitsandPrecision
+4 Entering trig functions=Enteringtrigfunctions
+4 Entering points=Enteringpoints
+4 X and Y coordinates=XandYcoordinates
+4 Point Input=PointInput
+4 To enter a point, use the command key from the list below:=Toenterapoint.usethecommandkeyfromthelistbelow.
+3 Updating (F11 Key)
+4 Updating (F11 Key)=Updating.F11Key.
+2 ELEMENTS
+3 ELEMENTS=ELEMENTS
+3 Layers=Layers5
+3 Snap Points=SnapPoints1
+3 Dimensioning=Dimensioning3
+3 LINE
+4 LINE=LINE
+4 Details:=Details.12
+3 RIGHT ANGLE
+4 RIGHT ANGLE=RIGHTANGLE
+4 Details:=Details.13
+3 BOX
+4 BOX=BOX
+4 Details:=Details.14
+3 RECTANGLE
+4 RECTANGLE=RECTANGLE
+4 Details:=Details.15
+3 HANDLE
+4 HANDLE=HANDLE
+4 Conventions:=Conventions.7
+4 Tag Handles=TagHandles
+4 Datum Handles=DatumHandles
+3 CONTINUOUS LINE
+4 CONTINUOUS LINE=CONTINUOUSLINE
+4 Details:=Details.16
+3 BLENDING ARC
+4 BLENDING ARC=BLENDINGARC
+4 Details:=Details.17
+3 CIRCLE
+4 CIRCLE=CIRCLE
+4 Details:=Details.18
+3 COMPASS ARC
+4 COMPASS ARC=COMPASSARC
+4 Details:=Details.19
+3 3-POINT ARC
+4 3-POINT ARC=3.POINTARC
+4 Details:=Details.20
+4 Hints:=Hints.2
+3 TANGENTIAL ARC
+4 TANGENTIAL ARC=TANGENTIALARC
+4 Details:=Details.21
+2 DRAG INSERT
+3 DRAG INSERT=DRAGINSERT1
+3 PICK from INDEX=PICKfromINDEX2
+3 Use Drag Insert=UseDragInsert
+3 The icons on the DRAG palette are:
+4 The icons on the DRAG palette are:=TheiconsontheDRAGpaletteare.
+4 Details:=Details.22
+4 Text, MIRROR X and MIRROR Y=Text.MIRRORXandMIRRORY
+4 Insert size=Insertsize
+4 Editing Inserts=EditingInserts
+4 Unlayered Inserts=UnlayeredInserts
+4 Layered Inserts=LayeredInserts2
+4 Using Layering=UsingLayering
+4 Colour overrides=Colouroverrides
+4 Inserts and Libraries=InsertsandLibraries
+4 Auto Regeneration=AutoRegeneration1
+3 CUTOUT
+4 CUTOUT=CUTOUT
+4 Basics:=Basics.1
+4 Details:=Details.23
+4 Architectural Example=ArchitecturalExample
+4 Hatch and Data Extent=HatchandDataExtent
+2 FRAME INSERT
+3 FRAME INSERT=FRAMEINSERT
+3 Starting=Starting
+3 Library=Library1
+3 Position drawings=Positiondrawings
+3 The palette contains the following icons:=Thepalettecontainsthefollowingicons.
+3 Operation:=Operation.4
+3 Insert Handles=InsertHandles
+3 Details:=Details.24
+3 Warning:=Warning.6
+3 FRAME and DRAG=FRAMEandDRAG
+2 HATCH
+3 HATCH=HATCH
+3 Conventions:=Conventions.8
+3 DRAG INSERT=DRAGINSERT2
+3 Warning:=Warning.7
+3 Advanced:=Advanced.10
+2 CURVE
+3 CURVE=CURVE
+3 Bezier=Bezier
+3 Ellipse=Ellipse
+3 B-Spline=B.Spline
+3 Q-Spline=Q.Spline
+3 Curve Fit=CurveFit
+3 The Curve Palette=TheCurvePalette
+3 Curve Tuning=CurveTuning
+3 Curve Fit controls=CurveFitcontrols
+3 Details:=Details.25
+3 IMPORT Files=IMPORTFiles
+3 Advanced:=Advanced.11
+2 TEXT
+3 TEXT=TEXT1
+3 Entering text=Enteringtext
+3 Drawing text=Drawingtext
+3 Details:=Details.26
+3 Conventions:=Conventions.9
+3 Advanced:=Advanced.12
+2 TEXT EDITOR
+3 TEXT EDITOR=TEXTEDITOR
+3 Introduction=Introduction
+3 Starting and stopping=Startingandstopping
+3 Text Editor Menu
+4 Text Editor Menu=TextEditorMenu
+4 File=File
+4 Edit=Edit
+3 Basics
+4 Basics=Basics
+3 Typing text
+4 Typing text=Typingtext
+3 Moving around
+4 Moving around=Movingaround
+3 Home and End
+4 Home and End=HomeandEnd
+3 Scrolling
+4 Scrolling=Scrolling
+3 Sideways scrolling
+4 Sideways scrolling=Sidewaysscrolling
+4 SHIFT+END (Select Right)=SHIFT.END.SelectRight.
+4 SHIFT+HOME (Select Left)=SHIFT.HOME.SelectLeft.
+3 Special Characters
+4 Special Characters=SpecialCharacters
+3 Incremental Labelling,Attributes
+4 Incremental Labelling,Attributes=IncrementalLabelling.Attributes
+4 Automatic Labelling=AutomaticLabelling
+3 Attributes
+4 Attributes=Attributes3
+4 Generating Attributes and Labels=GeneratingAttributesandLabels
+4 Saving Attributes and Labels=SavingAttributesandLabels
+3 TEXT FONTS
+4 TEXT FONTS=TEXTFONTS
+4 ISONORM=ISONORM
+4 SIMPLEX=SIMPLEX
+4 DUPLEX=DUPLEX
+4 TRIPLEX=TRIPLEX
+4 IDUPLEX (Italic Duplex)=IDUPLEX.ItalicDuplex.
+4 ITRIPLEX (Italic Triplex)=ITRIPLEX.ItalicTriplex.
+4 SCRIPT 1=SCRIPT1
+4 SCRIPT 2=SCRIPT2
+4 ENGLISH=ENGLISH
+4 GOTHIC=GOTHIC
+4 GRKSPX (Simple Greek)=GRKSPX.SimpleGreek.
+4 GRKCPX (Complex Greek)=GRKCPX.ComplexGreek.
+4 MSCRIPT 1 (Monospaced Script 1)=MSCRIPT1.MonospacedScript1.
+4 MSCRIPT 2 (Monospaced Script 2)=MSCRIPT2.MonospacedScript2.
+4 MSIMPLEX (Monospaced Simplex)=MSIMPLEX.MonospacedSimplex.
+4 MDUPLEX (Monospaced Duplex)=MDUPLEX.MonospacedDuplex.
+4 MTRIPLEX (Monospaced Triplex)=MTRIPLEX.MonospacedTriplex.
+4 MIDUPLEX (Monospaced Italic Duplex)=MIDUPLEX.MonospacedItalicDuplex.
+4 MITRIPLE (Monospaced Italic Triplex)=MITRIPLE.MonospacedItalicTriplex.
+4 MENGLISH (Monospaced English)=MENGLISH.MonospacedEnglish.
+4 MGOTHIC (Monospaced Gothic)=MGOTHIC.MonospacedGothic.
+4 MGRKSPX (Monospaced Simple Greek)=MGRKSPX.MonospacedSimpleGreek.
+4 MGRKCPX (Monospaced Complex Greek)=MGRKCPX.MonospacedComplexGreek.
+4 CYRILLIC=CYRILLIC
+4 DIMTERM=DIMTERM
+2 TAN CIRCLE
+3 TAN CIRCLE=TANCIRCLE
+3 Details:=Details.27
+2 POLYGON
+3 POLYGON=POLYGON
+3 Details:=Details.28
+2 FILLET
+3 FILLET=FILLET
+3 Filleting=Filleting
+2 CHAMFER
+3 CHAMFER=CHAMFER
+3 Details:=Details.29
+2 PARALLEL
+3 PARALLEL=PARALLEL
+3 Line attribute control=Lineattributecontrol
+3 Using PARALLEL=UsingPARALLEL
+3 Using PATHs
+4 Using PATHs=UsingPATHs
+4 Examples:=Examples.1
+4 Special cases:=Specialcases.
+4 EDIT & DIMENSION PATHs=EDIT.DIMENSIONPATHs
+3 Drawing lines
+4 Drawing lines=Drawinglines
+3 Orientation
+4 Orientation=Orientation
+3 FIRST LINE
+4 FIRST LINE=FIRSTLINE
+3 CENTRE
+4 CENTRE=CENTRE
+3 Curves
+4 Curves=Curves
+3 Warnings:
+4 Warnings:=Warnings.6
+2 BALLOON
+3 BALLOON=BALLOON
+3 Details:=Details.30
+3 Conventions:=Conventions.10
+3 Warnings:=Warnings.7
+3 Advanced:=Advanced.13
+2 COPY
+3 COPY=COPY
+3 Drag=Drag1
+3 Frame=Frame1
+3 Mirror=Mirror1
+3 Offset=Offset1
+3 Square Repeat=SquareRepeat
+3 Radial Repeat=RadialRepeat
+3 Details:=Details.31
+2 STRETCH-COPY
+3 STRETCH-COPY=STRETCH.COPY
+3 Principles:=Principles.1
+3 Other Entity types:
+4 Other Entity types:=OtherEntitytypes.
+4 WHOLE ITEM=WHOLEITEM1
+4 PART ITEM=PARTITEM1
+4 WHOLE BOX, WHOLE FENCE, WHOLE ELEMENT PATH, PART ELEMENT PATH=WHOLEBOX.WHOLEFENCE.WHOLEELEMENTPATH.PARTELEMENTPATH
+4 CUT BOX, CUT FENCE=CUTBOX.CUTFENCE1
+3 Making copies
+4 Making copies=Makingcopies
+3 Details:
+4 Details:=Details.32
+3 Layers
+4 Layers=Layers6
+1 EDIT
+2 GROUP
+3 GROUP=GROUP
+3 GROUP techniques=GROUPtechniques
+3 Part selection=Partselection
+3 Un-selecting Entities=Un.selectingEntities
+3 Highlighting=Highlighting
+3 Icons=Icons2
+3 FENCE palette=FENCEpalette
+3 Details:=Details.33
+3 Snap Points=SnapPoints2
+3 Advanced:=Advanced.14
+2 UNDO
+3 UNDO=UNDO
+3 Details:=Details.34
+2 REDO
+3 REDO=REDO
+3 Details=Details
+2 ERASE
+3 ERASE=ERASE
+3 Erase and Snap points=EraseandSnappoints
+3 Warning:=Warning.8
+2 CHANGE
+3 CHANGE=CHANGE
+3 Auto Regeneration=AutoRegeneration2
+3 Limitations=Limitations
+2 MOVE
+3 MOVE=MOVE
+3 Drag=Drag2
+3 Frame=Frame2
+3 Mirror=Mirror2
+3 Offset=Offset2
+3 Layers=Layers7
+2 STRETCH-MOVE
+3 STRETCH-MOVE=STRETCH.MOVE
+3 Principles:=Principles.2
+3 Operation:
+4 Operation:=Operation.5
+4 WHOLE ITEM=WHOLEITEM2
+4 PART ITEM=PARTITEM2
+4 WHOLE BOX, PATH A,PATH B, WHOLE FENCE=WHOLEBOX.PATHA.PATHB.WHOLEFENCE
+4 CUT BOX, CUT FENCE=CUTBOX.CUTFENCE2
+4 Examples:=Examples.2
+3 Details:
+4 Details:=Details.35
+3 Layers
+4 Layers=Layers8
+2 CLEANUP
+3 CLEANUP=CLEANUP
+3 Trim=Trim
+3 Extend=Extend
+3 Join=Join
+3 Corner=Corner
+3 Purge
+4 Purge=Purge
+4 Limitations:=Limitations.
+2 ERASE POINTS
+3 ERASE POINTS=ERASEPOINTS
+3 Details:=Details.36
+2 TEXT
+3 TEXT=TEXT2
+3 Copy Text=CopyText
+3 Replace Text=ReplaceText
+3 Move Text=MoveText
+3 Text Font=TextFont
+3 Change Text
+4 Change Text=ChangeText
+4 VARIABLE=VARIABLE
+3 Details:
+4 Details:=Details.37
+2 LAYER
+3 LAYER=LAYER
+3 Isolate Layer=IsolateLayer
+3 Keep Layer=KeepLayer
+3 Erase Layer=EraseLayer
+3 Renumber Layer=RenumberLayer
+3 Warning:=Warning.9
+2 ISOLATE
+3 ISOLATE=ISOLATE
+3 Basics:
+4 Basics:=Basics.2
+4 Recovering an Insert=RecoveringanInsert
+4 Altering an Insert=AlteringanInsert
+4 Exchanging=Exchanging
+4 Nested Inserts=NestedInserts
+3 Details:
+4 Details:=Details.38
+3 Undo
+4 Undo=Undo
+3 Paper Sizes
+4 Paper Sizes=PaperSizes
+3 Coincident Handles
+4 Coincident Handles=CoincidentHandles
+3 Layers and ISOLATE
+4 Layers and ISOLATE=LayersandISOLATE
+2 EXPLODE
+3 EXPLODE=EXPLODE
+3 Insert=Insert
+3 Fit=Fit
+3 Hatch=Hatch1
+3 Dimension=Dimension
+3 Curve=Curve
+3 Operation:=Operation.6
+3 Warning:=Warning.10
+3 Details:=Details.39
+3 Inserts=Inserts7
+3 Layers and Inserts=LayersandInserts
+2 IMPLODE
+3 IMPLODE=IMPLODE
+3 Operation=Operation3
+3 Details:=Details.40
+3 Advanced:=Advanced.15
+2 ADD SNAP
+3 ADD SNAP=ADDSNAP
+3 Rebuild For All Records=RebuildForAllRecords
+3 Selected Records=SelectedRecords
+3 Snaps From Inserts=SnapsFromInserts
+3 Snap list details:=Snaplistdetails.
+3 Temporary snap points
+4 Temporary snap points=Temporarysnappoints1
+4 Hint:=Hint.
+2 WIPE
+3 WIPE=WIPE
+3 Details:=Details.41
+2 SORT DATA
+3 SORT DATA=SORTDATA
+3 Sort By Layer=SortByLayer
+3 Coincident Elements=CoincidentElements
+3 Inserts In Path=InsertsInPath
+3 Handles In Path=HandlesInPath
+3 Text In Path=TextInPath
+3 Display Data Order=DisplayDataOrder
+3 Choose start record=Choosestartrecord
+3 OK=OK1
+3 Operation:=Operation.7
+3 Details:=Details.42
+3 RDF files=RDFfiles
+3 Paths=Paths
+3 PATH selection=PATHselection
+1 VIEW
+2 REDRAW=REDRAW
+2 REFRESH=REFRESH
+2 REGENERATE=REGENERATE
+2 PAN
+3 PAN=PAN
+3 IntelliMouse=IntelliMouse
+3 Details:=Details.43
+2 ZOOM
+3 ZOOM=ZOOM
+3 IntelliMouse™=IntelliMouseT
+3 + and - keys=.and.keys
+3 Details:=Details.44
+2 SHRINK
+3 SHRINK=SHRINK
+3 Details:=Details.45
+2 SPEED FILTER
+3 SPEED FILTER=SPEEDFILTER
+3 Text=Text
+3 Dims=Dims
+3 Inserts=Inserts8
+3 Hatch=Hatch2
+3 Elements:=Elements.
+3 Box Text=BoxText
+3 OK=OK2
+3 Details:=Details.46
+2 OPTIONS
+3 OPTIONS=OPTIONS
+3 Reverse Replay=ReverseReplay
+3 Auto Regeneration=AutoRegeneration3
+3 OK=OK3
+3 CANCEL=CANCEL
+3 Details:=Details.47
+3 Conventions:=Conventions.11
+2 SAVE ZOOM
+3 SAVE ZOOM=SAVEZOOM
+3 Details:=Details.48
+2 LOAD ZOOM
+3 LOAD ZOOM=LOADZOOM
+2 PREVIOUS VIEW
+3 PREVIOUS VIEW=PREVIOUSVIEW
+1 TOOLKIT
+2 POINTS
+3 POINTS=POINTS
+3 Details:=Details.49
+3 Temporary snap points=Temporarysnappoints2
+3 Advanced:=Advanced.16
+2 GRID
+3 GRID=GRID
+3 Operation=Operation4
+3 Grid layouts=Gridlayouts
+3 Steps=Steps
+3 Warnings:=Warnings.8
+2 RADIAL GRID
+3 RADIAL GRID=RADIALGRID
+3 Operation=Operation5
+3 Grid layout:=Gridlayout.
+3 Warnings:=Warnings.9
+2 ORTH TRAP
+3 ORTH TRAP=ORTHTRAP
+3 Details:=Details.50
+2 ANGLE TRAP
+3 ANGLE TRAP=ANGLETRAP
+3 Details:=Details.51
+2 NTAN TRAP
+3 NTAN TRAP=NTANTRAP
+3 Details:=Details.52
+2 X-Y COORD
+3 X-Y COORD=X.YCOORD
+3 Details:=Details.53
+2 ARC DIRECTION
+3 ARC DIRECTION=ARCDIRECTION
+3 Advanced:=Advanced.17
+2 LINE DIRECTION
+3 LINE DIRECTION=LINEDIRECTION
+3 Details:=Details.54
+3 Advanced:=Advanced.18
+2 TANGENT
+3 TANGENT=TANGENT
+3 Details:=Details.55
+2 FIND LAYER
+3 FIND LAYER=FINDLAYER
+3 Example:=Example.
+3 Report format:=Reportformat.
+3 Details:=Details.56
+1 DIMENSION
+2 ENTITIES
+3 ENTITIES=ENTITIES
+3 Dimensions=Dimensions3
+3 Dimension Entities=DimensionEntities
+3 Controlling dimension editing=Controllingdimensionediting
+3 Horizontal and Vertical dimensions=HorizontalandVerticaldimensions
+3 Details:=Details.57
+3 Advanced:=Advanced.19
+2 SET UP
+3 SET UP=SETUP
+3 LEADERS
+4 LEADERS=LEADERS
+4 Details:=Details.58
+3 LINES
+4 LINES=LINES
+4 Notes:=Notes.
+3 MARKERS
+4 MARKERS=MARKERS
+3 TEXT
+4 TEXT=TEXT3
+3 STYLE
+4 STYLE=STYLE
+4 Details:=Details.59
+2 TERMINATORS
+3 TERMINATORS=TERMINATORS
+3 WC_DTERM.SIZ
+4 WC_DTERM.SIZ=WC.DTERM.SIZ
+4 Code=Code
+4 Adjustment=Adjustment
+4 Size=Size
+4 Maximum=Maximum
+4 Minimum=Minimum
+4 Position=Position
+4 Draw-through=Draw.through
+4 Tolerances=Tolerances
+4 Details:=Details.60
+2 DISTANCE
+3 DISTANCE=DISTANCE
+3 Distance Selection palette
+4 Distance Selection palette=DistanceSelectionpalette
+4 PATH dimensioning effects=PATHdimensioningeffects
+4 Using PATH DIMENSION OFFSET=UsingPATHDIMENSIONOFFSET
+3 Tolerance palette
+4 Tolerance palette=Tolerancepalette
+3 Dimension Text Height palette
+4 Dimension Text Height palette=DimensionTextHeightpalette
+3 Prefix and Suffix palette
+4 Prefix and Suffix palette=PrefixandSuffixpalette
+3 Dimension Display
+4 Dimension Display=DimensionDisplay
+4 Overriding dimension text=Overridingdimensiontext
+3 Operation:
+4 Operation:=Operation.8
+3 PATH DIMENSION OFFSET
+4 PATH DIMENSION OFFSET=PATHDIMENSIONOFFSET
+3 Positioning with the cursor
+4 Positioning with the cursor=Positioningwiththecursor
+3 Details:
+4 Details:=Details.61
+3 Tolerancing:
+4 Tolerancing:=Tolerancing.
+3 Tolerance details:
+4 Tolerance details:=Tolerancedetails.
+3 Dimension Styles
+4 Dimension Styles=DimensionStyles
+3 Example drawing
+4 Example drawing=Exampledrawing
+2 EDIT DISTANCE
+3 EDIT DISTANCE=EDITDISTANCE
+3 Edit Position=EditPosition
+3 Edit Style=EditStyle
+3 Details:=Details.62
+2 RADIUS & DIAMETER
+3 RADIUS & DIAMETER=RADIUS.DIAMETER
+3 Operation:=Operation.9
+2 ANGLE
+3 ANGLE=ANGLE
+3 Details:=Details.63
+2 ARROW
+3 ARROW=ARROW
+3 Details:=Details.64
+2 AREA/PERIMETER
+3 AREA/PERIMETER=AREA.PERIMETER
+3 Details:=Details.65
+3 Accuracy:=Accuracy.
+3 Resolution:=Resolution.
+1 WINDOW
+2 Toolbar=Toolbar
+2 Status Bar (AccuCADD)=StatusBar.AccuCADD.
+2 Cascade=Cascade
+2 Tile=Tile
+2 Arrange Icons=ArrangeIcons
+2 Page n=Pagen
+1 HELP
+2 About ACCUCADD=AboutACCUCADD
+2 ENVIRONMENT
+3 ENVIRONMENT=ENVIRONMENT
+3 Version=Version
+3 PC name=PCname
+3 User name, User no.=Username.Userno.
+3 GLOBAL dir=GLOBALdir
+3 USER dir=USERdir
+3 Current dir=Currentdir
+3 Directory details:=Directorydetails.
+3 Total RAM=TotalRAM
+3 Total Virtual Memory=TotalVirtualMemory
+3 Free Virtual Memory=FreeVirtualMemory
+3 Memory paged to disk=Memorypagedtodisk
+2 SYSTEM INFORMATION
+3 SYSTEM INFORMATION=SYSTEMINFORMATION
+3 Directories=Directories3
+3 Filenames
+4 Filenames=Filenames
+4 System Directory=SystemDirectory
+4 ACCUCADD-DATA=ACCUCADD.DATA
+4 InstallShield Installation files=InstallShieldInstallationfiles
+4 Library=Library2
+3 Protecting Libraries
+4 Protecting Libraries=ProtectingLibraries
+3 WC_LIB1.LOG
+4 WC_LIB1.LOG=WC.LIB1.LOG
+2 HELP CONTENTS
+3 HELP CONTENTS=HELPCONTENTS

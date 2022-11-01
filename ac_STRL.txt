@@ -1,0 +1,4728 @@
+;AccuCADD window and palette text
+;05.12.2000
+;Version 2.3200c, English
+;Blank lines and comment lines starting with a ';' are ignored
+
+;The format of this file is:
+;(programming label - please do not change)
+;(string number)
+;(maximum length of text)
+;"(text)"
+
+;Fields of information may be separated by spaces, tabs or carriage returns.
+;Entries need not be in string number order.
+;A whole entry may be deleted if it is no longer used.
+;The maximum length of a string should not be changed.
+;The amount of text in this file should be kept as small as possible as it
+;is permanently loaded into memory.  This means that the length of text
+;strings should be kept to a minimum.
+
+;This file is compiled into the file WC_STRL.BIN to make it fast to load.
+;WC_STRL.BIN will be automatically recreated if it is found to be older
+;than this file.  Changing this file will also automatically delete any
+;Save Setup file.
+
+STRL_BLANK		0	2
+"_"
+;An identifier for this file
+
+STRL_NEW_INDEX		1	9
+"NEW INDEX"
+;Heading of index-selection part of index page palette
+
+STRL_M_VIEWPLOT		2	9
+"Viewplot"
+;Output menu option for unscaled plot at current zoomed view
+
+STRL_S_WN_ERROR		3	38
+"error %d\n"
+;As for all the other 'Error' strings.  Note not capitalised.
+
+STRL_PRT_DUMP_TERM		4	79
+"Dump terminated prematurely\r\n"
+;Message printed on printer if a Snapshot or Print is stopped with ESC
+
+STRL_FILTER_ON		5	3
+"On"
+;Used in text editor for insert on / off
+
+STRL_FILTER_OFF		6	3
+"Off"
+;Used in text editor for insert on / off
+
+STRL_FILTER_EXIT		7	6
+"Exit"
+;To finish with a palette
+
+STRL_LYR_T_ONLY		8	1
+"O"
+;Character used for 'only' in layer table
+
+STRL_NA		9	2
+"na"
+;Abbreviation for 'irrelevant', 'not applicable' or 'not used'
+
+STRL_FILE		10	8
+"FILE"
+;String describing action on index page palette : file
+
+STRL_LOAD		11	8
+"LOAD"
+;String describing action on index page palette :load
+
+STRL_INSERT		12	8
+"INSERT"
+;String describing action on index page palette : insert (drag or frame)
+
+STRL_ERROR		13	8
+"ERROR"
+;String displayed instead of dates on index page palette if dates in error
+
+STRL_NOT_BOOKED		14	24
+"Not booked"
+;Displayed on status bar when loading via index
+
+STRL_WARNING		15	24
+"WARNING"
+;Heading line of warning window
+
+; This HAS to have length 24 (= value of PTCONTINUE)
+STRL_PRESS_BTN_TO_CONT		16	24
+"Press button to continue"
+;Bottom line of warning window.
+
+STRL_SHORT_LENGTH		17	2
+"L="
+;An abbreviation for 'length', used in reporting line lengths
+
+STRL_SHORT_RADIUS		18	2
+"r "
+;An abbreviation for 'radius', used in reporting arc radi.
+
+STRL_MAGNIFICATION_X		19	8
+"mag\'n x"
+;An abbreviation for 'magnification times' or 'magnification factor'
+
+STRL_REDUCTION_FACTOR		20	8
+"red\'n x"
+;An abbreviation for 'reduction times' or 'reduction factor'
+
+STRL_M_SET_UP		21	10
+"SET UP"
+;Menu header - setting up functions
+
+STRL_M_DRAW		22	10
+"DRAW"
+;Header for menu - drawing functions
+
+STRL_M_EDIT		23	10
+"EDIT"
+;Header for menu - data editing/modifying functions
+
+STRL_M_VIEW		24	10
+"VIEW"
+;Header for menu - viewing functions
+
+STRL_M_LIBRARY		25	10
+"LIBRARY"
+;Header for menu - library/storage functions
+
+STRL_M_TOOLKIT		26	10
+"TOOLKIT"
+;Header for menu - toolkit or assistance functions
+
+STRL_M_DIMENSION		27	10
+"DIMENSION"
+;Header for menu - dimensioning functions
+
+STRL_M_OUTPUT		28	10
+"OUTPUT"
+;Header for menu - printing and plotting functions
+
+STRL_NO_MATCH		29	16
+"No match"
+;Keyboard entry of menu option - no matching option found
+
+STRL_ID_NO		30	16
+"user no %3.3u"
+;Displayed on status bar when loading via index
+
+; *************************  Paper size selection  **************************
+STRL_M_PAPER_A0		31	8
+"A0"
+;Menu item - Select for a paper size of ISO A0
+
+STRL_M_PAPER_A1		32	8
+"A1"
+;Menu item - Select for a paper size of ISO A1
+
+STRL_M_PAPER_A2		33	8
+"A2"
+;Menu item - Select for a paper size of ISO A2
+
+STRL_M_PAPER_A3		34	8
+"A3"
+;Menu item - Select for a paper size of ISO A3
+
+STRL_M_PAPER_A4		35	8
+"A4"
+;Menu item - Select for a paper size of ISO A4
+
+STRL_M_PAPER_A5		36	8
+"A5"
+;Menu item - Select for a paper size of ISO A5
+
+STRL_M_PAPER_A		37	8
+"A"
+;Menu item - Select for a paper size of ANSI A
+
+STRL_M_PAPER_B		38	8
+"B"
+;Menu item - Select for a paper size of ANSI B
+
+STRL_M_PAPER_C		39	8
+"C"
+;Menu item - Select for a paper size of ANSI C
+
+STRL_M_PAPER_D		40	8
+"D"
+;Menu item - Select for a paper size of ANSI D
+
+STRL_M_PAPER_E		41	8
+"E"
+;Menu item - Select for a paper size of ANSI E
+
+STRL_M_PAPER_ARCH_C		42	8
+"Arch. C"
+;Menu item - Select for a paper size of Architect's C (18"x24")
+
+STRL_M_PAPER_ARCH_D		43	8
+"Arch. D"
+;Menu item - Select for a paper size of Architect's D (24"x36")
+
+STRL_M_PAPER_ARCH_E		44	8
+"Arch. E"
+;Menu item - Select for a paper size of Architect's E (36"x48")
+
+STRL_PAP_SET_USER		45	8
+"Set User"
+;Menu item - Select for user defined paper size.
+
+STRL_M_PREC_DP0		46	8
+"1"
+;Precision Menu, numeric section, 0 decimal places
+
+STRL_M_PREC_DP1		47	8
+"1.1"
+;Precision Menu, numeric section, 1 decimal place
+
+STRL_M_PREC_DP2		48	8
+"1.12"
+;Precision Menu, numeric section, 2 decimal places
+
+STRL_M_PREC_DP3		49	8
+"1.123"
+;Precision Menu, numeric section, 3 decimal places
+
+STRL_M_PREC_DP4		50	8
+"1.1234"
+;Precision Menu, numeric section, 4 decimal places
+
+STRL_M_PREC_DP5		51	8
+"1.12345"
+;Precision Menu, numeric section, 5 decimal places
+
+STRL_M_PREC_DP6		52	8
+"1.123456"
+;Precision Menu, numeric section, 6 decimal places
+
+STRL_M_PREC_DEG		53	8
+"\260"
+;Precision Menu, angular section, degrees only
+
+STRL_M_PREC_DEG_MIN		54	8
+"\260 '"
+;Precision Menu, angular section, degrees and minutes
+
+STRL_M_PREC_DEG_MIN_SEC		55	8
+"\260 ' \042"
+;Precision Menu, angular section, degrees, minutes and seconds
+
+; ******************  Pens for lineweight palette  *************************
+
+STRL_PEN_NUMBER_N		56	2
+"N"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_1		57	2
+"1"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_2		58	2
+"2"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_3		59	2
+"3"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_4		60	2
+"4"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_5		61	2
+"5"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_6		62	2
+"6"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_7		63	2
+"7"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_8		64	2
+"8"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_9		65	2
+"9"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_10		66	2
+"10"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_11		67	2
+"11"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_12		68	2
+"12"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_13		69	2
+"13"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_14		70	2
+"14"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_15		71	2
+"15"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_16		72	2
+"16"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_17		73	2
+"17"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_18		74	2
+"18"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_19		75	2
+"19"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_PEN_NUMBER_20		76	2
+"20"
+;Number for use on lineweight palette, mostly for pen numbers
+
+STRL_CREATE_EXIT_1		77	14
+"Library path"
+;Create/Exit submenu of Set Path, line 1
+
+STRL_CREATE_EXIT_2		78	14
+"does not exist"
+;Create/Exit submenu of Set Path, line 2
+
+; *********************  Maintenance submenu *****************************
+
+STRL_MAINTA_DELETE		79	14
+"Delete Index"
+;Maintenance submenu - select for "Delete Index"
+
+STRL_MAINTA_COPY		80	14
+"Copy Index"
+;Maintenance submenu - select for "Copy Index"
+
+STRL_IMP_OVERWRITE		81	9
+"Overwrite"
+;First line of overwite/renumber window (Used by IMPORT)
+
+STRL_IMP_RENUMBER		82	9
+"Renumber"
+;Second line of overwite/renumber window (Used by IMPORT)
+
+STRL_FILE_OVERWRITE		83	9
+"Overwrite"
+;First line of overwrite/keep window (Used by FILE)
+
+STRL_FILE_KEEP		84	9
+"Keep"
+;Second line of overwrite/keep window (Used by FILE)
+
+; ***********************  Misc Prompts  *********************************
+
+STRL_M_ENV1		85	16
+"User name   "
+;Network user name
+
+STRL_M_ENV2		86	16
+"User no.    "
+;Network user number
+
+STRL_M_ENV3		87	16
+"Search path "
+;Network DOS-style search path
+
+STRL_M_ENV4		88	16
+"GLOBAL dir"
+;Key word for GLOBAL network directory must be uppercase
+
+STRL_M_ENV5		89	16
+"USER dir"
+;Key word for USER network directory must be uppercase
+
+STRL_M_ENV6		90	16
+"MACHINE dir"
+;Key word for MACHINE network directory must be uppercase
+
+STRL_M_ENV7		91	16
+"LOCAL dir"
+;Key word for LOCAL network directory must be uppercase
+
+STRL_M_ENV8		92	16
+"Current dir : %s"
+;Network current directory path
+
+STRL_SAMPLER		93	12
+"Evaluation"
+;Used on middle line of logo palette in evaluation sample
+
+STRL_SAMPLER_VERSION		94	12
+"Version"
+;Used on Bottom line of logo palette in evaluation sample
+
+STRL_M_ENV9		95	16
+"Not used"
+;TOOLKIT/ENVIROMENT local directory path if not used
+
+STRL_EXPORTED_FROM		96	50
+"Exported From Qcad\\%s"
+;Message in an RDF file.  Do not alter the '\%s'.
+
+STRL_M_UNITS_MM		97	7
+"mm"
+;Units menu - yielding millimetres.  Always 'mm' on Status Bar.
+
+STRL_M_UNITS_CMS		98	7
+"cm"
+;Units menu - yielding centimeters.  Always 'cm' on Status Bar.
+
+STRL_M_UNITS_M		99	7
+"m"
+;Units menu - yielding metres.  Always 'm' on Status Bar.
+
+STRL_M_UNITS_KM		100	7
+"km"
+;Units menu - yielding killometres.  Always 'km' on Status Bar.
+
+STRL_M_UNITS_METRIC		101	7
+"METRIC"
+;Units menu - yielding generalised metric units.  Always 'MET' on Status Bar.
+
+STRL_M_UNITS_64TH		102	7
+"1/64\""
+;Units menu - yielding 1/64ths of inches.  Always '/64' on Status Bar.
+
+STRL_M_UNITS_INCHES		103	7
+"\""
+;Units menu - yielding inches.  Always 'in' on Status Bar.
+
+STRL_M_UNITS_FEET		104	7
+"\'"
+;Units menu - yielding feet.  Always 'ft' on Status Bar.
+
+STRL_M_UNITS_MILES		105	7
+"miles"
+;Units menu - yielding miles.  Always 'mi' on Status Bar.
+
+STRL_M_UNITS_ENGLISH		106	7
+"ENGLISH"
+;Units menu - yielding generalised imperial units.  Always 'ENG' on Status Bar
+
+STRL_Y_COORD		107	16
+"Y Co-ordinate"
+;Input window prompt when hitting Y key during cursor
+
+STRL_LYR_T_NUMBER		108	8
+"LAYER"
+;Layer table header - layer number.
+
+STRL_LYR_T_COLOUR		109	8
+"COLOR"
+;Layer table header - layer color.
+
+STRL_LYR_T_LS		110	8
+"LS"
+;Layer table header - layer line style.
+
+STRL_LYR_T_DISPLAY		111	8
+"DISPLAY"
+;Layer table header - layer display status.
+
+STRL_LYR_T_ACTIVE		112	8
+"ACTIVE"
+;Display status on layer table
+
+STRL_NEW_ACTIVE_LYR		113	30
+"New Active Layer ="
+;Prompt for entering new active layer by name or number (Input on same line)
+
+STRL_LYR_T_ALL		114	1
+"A"
+;Layer table entry - All values permitted/shown (color and style)
+
+STRL_LYR_T_OFF		115	3
+"OFF"
+;Display for no layer on status bar and in parallels
+
+STRL_X_COORD		116	16
+"X Co-ordinate"
+;Input window prompt when hitting X key during cursor
+
+STRL_TED_FILE_BUFFER		117	11
+"File buffer"
+;Editor prompt when doing a file label
+
+STRL_TED_TERM		118	4
+"Term"
+;Editor report of line terminator type
+
+STRL_TED_SAVE		119	1
+"S"
+;Text editor - character for 'save' when prompted (y/n/save)
+
+STRL_TAN_CIRCLE		120	13
+"Tan Circle"
+;Draw menu option for creating circle tangent to three lines
+
+STRL_DEFAULT_LYR_NAME		121	32
+"Prime Layer"
+;Name given to default layer, layer 1, on startup.
+
+STRL_AUTO_LYR_ADDITION		122	32
+"Automatic addition"
+;Name given to a layer created automatically by the system.
+
+STRL_PAL_TXT_LYR		123	3
+"LAY"
+;Text written onto change palette.
+
+STRL_PAL_TXT_COL		124	3
+"COL"
+;Text written onto change palette.
+
+STRL_PLT_PEN_UNASSIGNED		125	11
+"Unassigned"
+;No plotter pen color assigned
+
+STRL_PLT_BLACK		126	11
+"Black"
+;Plotter pen color is black
+
+STRL_PLT_GREY		127	11
+"Grey"
+;Plotter pen color is grey
+
+STRL_PLT_DRED		128	11
+"D.Red"
+;Plotter pen color is dark red
+
+STRL_PLT_RED		129	11
+"Red"
+;Plotter pen color is red
+
+STRL_PLT_LRED		130	11
+"L.Red"
+;Plotter pen color is light red
+
+STRL_PLT_PINK		131	11
+"Pink"
+;Plotter pen color is pink
+
+STRL_PLT_DORANGE		132	11
+"D.Orange"
+;Plotter pen color is dark orange
+
+STRL_PLT_ORANGE		133	11
+"Orange"
+;Plotter pen color is orange
+
+STRL_PLT_LORANGE		134	11
+"L.Orange"
+;Plotter pen color is light orange
+
+STRL_PLT_YELLOW		135	11
+"Yellow"
+;Plotter pen color is yellow
+
+STRL_PLT_DBROWN		136	11
+"D.Brown"
+;Plotter pen color is dark brown
+
+STRL_PLT_BROWN		137	11
+"Brown"
+;Plotter pen color is brown
+
+STRL_PLT_LBROWN		138	11
+"L.Brown"
+;Plotter pen color is light brown
+
+STRL_PLT_DBLUE		139	11
+"D.Blue"
+;Plotter pen color is dark blue
+
+STRL_PLT_BLUE		140	11
+"Blue"
+;Plotter pen color is blue
+
+STRL_PLT_LBLUE		141	11
+"L.Blue"
+;Plotter pen color is light blue
+
+STRL_PLT_DGREEN		142	11
+"D.Green"
+;Plotter pen color is dark green
+
+STRL_PLT_GREEN		143	11
+"Green"
+;Plotter pen color is green
+
+STRL_PLT_LGREEN		144	11
+"L.Green"
+;Plotter pen color is light green
+
+STRL_PLT_DVIOLET		145	11
+"D.Violet"
+;Plotter pen color is dark violet
+
+STRL_PLT_VIOLET		146	11
+"Violet"
+;Plotter pen color is violet
+
+STRL_PLT_LVIOLET		147	11
+"L.Violet"
+;Plotter pen color is light violet
+
+STRL_PLT_ENTER_COL		148	79
+"Enter pen color code"
+;Prompt user to enter a color number
+
+STRL_PLT_TAB_COL		149	7
+"Color"
+;Plotter table heading - Color
+
+STRL_PLT_TAB_PENCOL		150	11
+"Pen Color"
+;Plotter table heading - Pen Color
+
+STRL_PLT_TAB_PENCODE		151	4
+"Code"
+;Plotter table heading - Pen Color Code
+
+STRL_PLT_TAB_PENNAME		152	8
+"Pen Name"
+;Plotter table heading - Pen Name
+
+STRL_RCAD		153	4
+"RCAD"
+;Abbrieviation for AccuCADD.
+
+STRL_RDF		154	4
+"RDF"
+;AccuCADD Data Format (Or something like that) version 1.
+
+STRL_RDF2		155	4
+"RDF2"
+;AccuCADD Data Format (Or something like that) version 2.
+
+STRL_LAY		156	4
+"LAY"
+;Abbrieviation for Layer.
+
+STRL_LW		157	4
+"L/W"
+;Abbrieviation for Line Weight.
+
+STRL_FILE_FILE		158	8
+" File"
+;Option to file in new file window.
+
+STRL_FILE_AND_LABEL		159	8
+"+Label"
+;Option to file and add label in new file window.
+
+STRL_FILE_MOVE		160	8
+" Move"
+;Option to reselect position from new file window.
+
+STRL_TED_HELP_TITLE		161	20
+"HELP"
+;Editor title in help
+
+STRL_TED_INSERT		162	6
+"Insert"
+;Editor report
+
+STRL_TED_F10_PMT		163	25
+"F10 for editor help"
+;Editor prompt
+
+STRL_TED_BUFFER		164	11
+"Buffer"
+;Editor prompt for buffer number
+
+STRL_NUMBER		165	20
+"Number"
+;A word meaning number.
+
+STRL_NCAT_PATH		166	16
+" Path Catalog"
+;Path Catalog Window Header.
+
+STRL_NCAT_SCROLL_UP		167	16
+" Scroll Up"
+;Catalog Scroll Up.
+
+STRL_NCAT_SCROLL_DOWN		168	16
+" Scroll Down"
+;Catalog Scroll Down.
+
+STRL_NCAT_PAGE_UP		169	16
+" Page Up"
+;Catalog Page Up.
+
+STRL_NCAT_PAGE_DOWN		170	16
+" Page Down"
+;Catalog Page Down.
+
+STRL_NCAT_DELETE_ENTRY		171	16
+" Delete Entry"
+;Catalog Delete Entry.
+
+STRL_NCAT_SAVE_TABLE		172	16
+" Save Table"
+;Catalog Save Table.
+
+STRL_NCAT_SIZE		173	16
+" Size Catalog"
+;Paper Size Catalog Window Header.
+
+STRL_EDTXT_COPY		174	10
+"Copy"
+;String for Edit Text - Copy function
+
+STRL_EDTXT_REPLACE		175	10
+"Replace"
+;String for Edit Text - Replace function
+
+STRL_EDTXT_MOVE		176	10
+"Move"
+;String for Edit Text - Move function
+
+STRL_N_FOR_NO_ACTIVE_LYR		177	70
+" 'N' for no active layer"
+;Prompt in active layer window when layer change selected
+
+STRL_TED_COL		178	3
+"Col"
+;Editor report of current column
+
+STRL_TED_EDITOR_TITLE		179	40
+"AccuCADD TEXT EDITOR"
+;Editor title
+
+STRL_DIM_AUTO		180	6
+"AUTO"
+;The dimension setup palette automatic indicator
+
+STRL_DIM_FREE		181	10
+"FREE"
+;The dimension setup palette free lead line length message.
+
+STRL_M_TRIM		182	20
+"Break/Extend"
+;Break/Extend & Join selection on pull down menu.
+
+STRL_M_AREA_PERIMTER		183	14
+"Area-Perimeter"
+;Menu item for area and perimeter selection
+
+STRL_M_ERASE_PNTS		184	13
+"Handles"
+;Menu item for erase of handles
+
+STRL_TED_LINE		185	4
+"Line"
+;Editor report of current line
+
+STRL_TRIM_PAL_TRIM		186	20
+"Break"
+;BREAK for the break/extend/join palette
+
+STRL_TRIM_PAL_EXTEND		187	20
+"Extend"
+;EXTEND for the break/extend/join palette
+
+STRL_TRIM_PAL_JOIN		188	20
+"Join"
+;JOIN for the break/extend/join palette
+
+STRL_STYLE_OLD		189	8
+"OLD"
+;Indicates an unknown style name - must be capitals
+
+STRL_FONT_CAT		190	30
+"Font Catalog"
+;Header text for font selection list
+
+STRL_FONT_ENTER		191	30
+"Enter Font"
+;Prompt for input window for selecting font by name
+
+STRL_STYLE_NEW		192	8
+"NEW"
+;Indicates an as yet unnamed style - must be capitals
+
+STRL_STYLE_SAVE		193	15
+"Save"
+;Save file, as in write it out
+
+STRL_STYLE_LOAD		194	15
+"Load"
+;Load file, as in read it in
+
+STRL_STYLE_CAT		195	30
+"Style Catalog"
+;Header text for style selection list
+
+STRL_STYLE_ENTER		196	30
+"Enter Style"
+;Prompt for input window when selecting a style
+
+; ***********************  Curve Prompts  *********************************
+
+STRL_CURVE_ELLIPSE		197	30
+"Ellipse Trace"
+;curve type for window
+
+STRL_CURVE_BEZIER		198	30
+"Bezier Trace"
+;curve type for window
+
+STRL_CURVE_B_SPLINE		199	30
+"B-Spline"
+;curve type for window
+
+STRL_CURVE_Q_SPLINE		200	30
+"Q-Spline"
+;curve type for window
+
+STRL_CURVE_FIT		201	30
+"Curve Fit"
+;curve type for window
+
+STRL_AREA_REP_AREA		202	15
+"Area ="
+;Report string for the area in dimension area and perimeter.
+
+STRL_AREA_REP_PERIM		203	20
+"Perimeter ="
+;Report string for the perimeter in dimension area and perimeter.
+
+STRL_LYR_F9_PROMPT		204	40
+"<F9> mark <DEL> delete <ESC> finish"
+;Prompt for layer table
+
+STRL_M_OP_PATHNAME		205	14
+"Pathname"
+;Output menu item - select an output destination pathname.
+
+STRL_YES		206	1
+"Y"
+;Validates entry of Y for Y/N prompts
+
+STRL_NO		207	1
+"N"
+;Validate entry of N for Y/N prompts
+
+STRL_THETA		208	5
+"\332 "
+;String for upper-case theta (math symbol for angle) - include trailing space
+
+STRL_INFINITY		209	5
+" \375"
+;String for the math symbol for infinity - include leading space
+
+STRL_PHI		210	5
+"\370 "
+;String for upper-case phi (math symbol for diameter) - include trailing space
+
+STRL_PLUS_MINUS		211	5
+"\261"
+;String to use for the plus/minus symbol
+
+STRL_DEGREE		212	5
+"\260"
+;String to use for the degree symbol
+
+STRL_NO_LAYER		213	1
+"N"
+;Character to be used for setting NO ACTIVE LAYER
+
+STRL_LAYER_NAME		214	32
+"LAYER NAME"
+;Layer table header - layer name.
+
+STRL_IN_MEM		215	80
+"Insufficient memory"
+;Error message if not enough memory left after start up
+
+STRL_LYR_NO		216	4
+"NO"
+;Display status on layer table
+
+STRL_M_DIMENS		217	13
+"Dimension"
+;Item in set up menu for AccuCADD
+
+STRL_PEN_CATALOGUE		218	18
+"Pen Catalog"
+;Prompt in catalog window for load or save pens
+
+STRL_SPEED_FILTER		219	16
+"Speed Filter"
+;Title for speed filter palette
+
+STRL_LOAD_PENS		220	16
+"Load Pens"
+;Window selection - load plotter pen configuration
+
+STRL_SAVE_PENS		221	16
+"Save Pens"
+;Window selection - save plotter pen configuration
+
+STRL_PEN_SORT		222	8
+"Pen Sort"
+;Plotter palette selection
+
+STRL_BACKUP_FREQUENCY		223	20
+"Set Auto Backup"
+;Window item - set frequency of Auto Backup
+
+STRL_BACKUP_NOW		224	20
+"Backup Now"
+;Window item - backup immediately
+
+STRL_LOAD_BACKUP		225	20
+"Load Backup"
+;Window item - load last backup
+
+STRL_RDF_CATALOG		226	18
+"RDF Catalog"
+;Catalog or RDF files for import
+
+
+STRL_M_MIDPNT		227	20
+"Mid-point"
+;TOOLKIT option for finding line/arc mid-points
+
+STRL_EDTXT_FONT		228	10
+"Font"
+;EDIT/TEXT window option for group changing font
+
+STRL_DSK_PROTECTED		229	50
+"Disk is write protected - retry ?"
+;Warning - the disk was blocked from beingwritten on.  The program can try again
+
+STRL_LYR_NAME_PROMPT		230	30
+"Enter name (up to 32 chars)"
+;Prompt for layer table
+
+STRL_LYR_NUMBER_PROMPT		231	30
+"Enter layer number"
+;Prompt for layer table
+
+STRL_LYR_DISPLAY_PROMPT		232	30
+"<Y>es <N>o <A>ctive <O>nly"
+;Prompt for layer table
+
+STRL_LYR_COLOUR_PROMPT		233	30
+"Enter color number"
+;Prompt for layer table
+
+STRL_LYR_LS_PROMPT		234	30
+"Enter linestyle number"
+;Prompt for layer table
+
+STRL_LYR_YES		235	4
+"YES"
+;Display status on layer table
+
+STRL_LYR_T_EXIT_CONFIRM		236	60
+"<ESC> to exit <ENTER> to confirm"
+;Prompt when setting pen colors / import layer assignments
+
+STRL_IMG_CATALOG		237	18
+"Images Catalog"
+;Catalog of image files for ouptut
+
+STRL_PLO_CATALOG		238	18
+"PLO Catalog"
+;Catalog of PLO files for ouptut
+
+STRL_BOOKING		239	8
+"Booking"
+;Marks a library page as having auto booking
+
+STRL_BOX_SIZE		240	8
+"BOX SIZE"
+;Heading of library-box-size selection part of index page palette
+
+STRL_M_CREATE_EXIT_3		241	14
+"Create ?"
+;Part of a prompt when a library path does not exist
+
+STRL_DOOR_OPEN		242	50
+"Drive door open or disk not in drive - retry ?"
+;Warning - drive can't access the disk.  The program can try again
+
+STRL_M_PREC_DEG_FP		243	8
+"decimal"
+;Precision Menu, angular section, decimal degrees
+
+STRL_SORT_NUM_FORWARD		244	16
+"no. forward"
+;Sort index by number order
+
+STRL_SORT_NUM_BACKWARD		245	16
+"no. reverse"
+;Sort index by reverse number order
+
+STRL_SORT_NAME_FORWARD		246	16
+"name forward"
+;Sort index by name order
+
+STRL_SORT_NAME_BACKWARD		247	16
+"name reverse"
+;Sort index by reverse name order
+
+STRL_SORT_DATE_FORWARD		248	16
+"date forward"
+;Sort index by date order
+
+STRL_SORT_DATE_BACKWARD		249	16
+"date reverse"
+;Sort index by reverse date order
+
+STRL_FILE_KEEP_IMAGE		250	20
+"+Keep Image"
+;Filing Option
+
+
+STRL_BYTES_FREE		251	20
+"%lu bytes free"
+;message for bytes free
+
+STRL_HELP_CHAR		252	1
+"?"
+;Help character
+
+STRL_C_FOR_HELP		253	30
+"%c for help"
+;Help prompt %c is replaced with the help character
+
+STRL_TED_ALL		254	1
+"A"
+;Character for all in editor replace
+
+STRL_EDTXT_CHANGE		255	10
+"Change"
+;String for Edit Text - Change function
+
+STRL_TRIM_TIDY_CORNER		256	20
+""
+;DELETION
+
+STRL_TRIM_PURGE		257	20
+"Purge"
+;PURGE for the break/extend/join window
+
+STRL_AREA_REP_USER_HATCH_AREA		258	12
+"Area ="
+; Leading text for User Hatch area
+
+STRL_AREA_REP_USER_HATCH_COUNT		259	12
+" Tiles"
+; Trailing text for tile count in user hatch.
+
+STRL_REPORT_END_POINT		260	4
+"PNT "
+; Report string addition for snap to point
+
+STRL_REPORT_TANGENT		261	4
+"TAN "
+; Report string addition for snap to tangent
+
+STRL_REPORT_PERPENDICULAR		262	4
+"PRP "
+; Report string addition for snap to perpendicular
+
+STRL_REPORT_MIDPOINT		263	4
+"MID "
+; Report string addition for snap to midpoint
+
+STRL_REPORT_NEAR_POINT		264	4
+"NR "
+; Report string addition for snap to near point
+
+STRL_TRIM_MESSY_CORNER		265	20
+"Corner"
+;CORNER for the break/extend/join window
+
+STRL_M_PREC_RAD		266	8
+"rad"
+;Precision Menu, angular section, radians
+
+STRL_M_PREC_GRAD		267	8
+"grad"
+;Precision Menu, angular section, grads
+
+STRL_RADIAN		268	5
+"rad"
+;String to use for the radian symbol
+
+STRL_GRAD		269	5
+"gr"
+;String to use for the grad symbol
+
+STRL_LYR_F1_F2_PROMPT		270	40
+"<F1> load table <F2> save table"
+;Prompt for layer table
+
+STRL_CAT_USER		271	8
+"USER"
+;Text for the button on a catalog
+
+STRL_CAT_LOCAL		272	8
+"LOCAL"
+;Text for the button on a catalog
+
+STRL_CAT_GLOBAL		273	8
+"GLOBAL"
+;Text for the button on a catalog
+
+STRL_CAT_MACHINE		274	8
+"MACHINE"
+;Text for the button on a catalog
+
+STRL_P_ACKNOWLEDGE		275	21
+"Acknowledge"
+;Prompt - please press the button to indicate you've understood
+
+STRL_P_SELECT_FROM_WIND		276	21
+"Select from window"
+;Prompt - select one of the items in the window
+
+STRL_P_AB_OR_CON		277	21
+"Abort / Continue"
+;Prompt on warning palette - offers choice of stopping or ontinuing the action
+
+STRL_P_SELECT_IDX		278	21
+"Select index"
+;Prompt - select an index
+
+STRL_P_SELECT_HANDLE		279	21
+"Select handle"
+;Prompt - select a handle with the cursor
+
+STRL_P_SELECT_INSERT		280	21
+"Select insert number"
+;Prompt - select an insert by number from the displayed window
+
+STRL_P_MAKE_SELECT		281	21
+"Make selection"
+;Prompt - select from the visible options
+
+STRL_P_HANDLE_POS		282	21
+"Handle position ?"
+;Prompt - position the handle
+
+STRL_P_CENTRE_POS		283	21
+"Centre position ?"
+;Prompt - position the centre of an arc or circle
+
+STRL_P_RADIUS		284	21
+"Radius ?"
+;Prompt - Position the cursor to set the radius
+
+STRL_P_1ST_PNT		285	21
+"1st point ?"
+;Prompt - position the first point of a cursor
+
+STRL_P_2ND_PNT		286	21
+"2nd point ?"
+;Prompt - position the second point of a cursor
+
+STRL_P_3RD_PNT		287	21
+"3rd point ?"
+;Prompt - position the third point of a cursor
+
+STRL_P_START_PNT		288	21
+"Start point ?"
+;Prompt - position the start point of a line
+
+STRL_P_END_PNT		289	21
+"End point ?"
+;Prompt - position the end point of a line
+
+STRL_P_1ST_CORNER		290	21
+"1st corner ?"
+;Prompt - position the first corner of a box
+
+STRL_P_2ND_CORNER		291	21
+"2nd corner ?"
+;Prompt - position the second corner of a box
+
+STRL_P_START_POS		292	21
+"Start position ?"
+;Prompt - general for a starting position
+
+STRL_P_END_POS		293	21
+"End position ?"
+;Prompt - general for a finishing or ending position
+
+STRL_P_POS_HATCH		294	21
+"Position hatch origin"
+;Prompt - Position the origin of a hatching - defines 'inside'
+
+STRL_P_MAGNIFICATION		295	21
+"Magnification ?"
+;Prompt - indicate magnification by cursor position or by typing it in
+
+STRL_P_TEXT_POS		296	21
+"Text position ?"
+;Prompt - position the text block
+
+STRL_P_4TH_PNT		297	21
+"4th point ?"
+;Prompt - position the fourth point in the cursor
+
+STRL_P_ANGLE		298	21
+"Angle ?"
+;Prompt - position the cursor to indicate angle, or type it in
+
+STRL_P_FILE_POS		299	21
+"File position ?"
+;Prompt - position the library box cursor for FILE
+
+STRL_P_DIAMETER		300	21
+"Diameter ?"
+;Prompt - position the cursor to indicate the circle diameter, or type it in
+
+STRL_P_CHOOSE_ELEMENT		301	21
+"Choose element"
+;Prompt - select an element with the cursor
+
+STRL_P_CHOOSE_FILLET		302	21
+"Choose fillet"
+;Prompt - select one of the possible fillet positions with the cursor
+
+STRL_P_LINE_POS		303	21
+"Line position ?"
+;Prompt - indicate the position of the line with the cursor
+
+STRL_P_PLEASE_WAIT		304	21
+"Please wait"
+;Prompt - please wait for calculations to be completed
+
+STRL_P_PAP_SET_USER		305	21
+"Set user"
+;Menu item - Select to enter the dimensions for a user-defined paper size
+
+STRL_P_SELECT_PATH_DEL		306	21
+"Select path to delete"
+;Catalog Delete Entry Prompt.
+
+STRL_P_SELECT_SIZE_DEL		307	21
+"Select size to delete"
+;Catalog Delete Entry Prompt.
+
+STRL_P_CURVE_DEL_PNT_NO		308	21
+"Delete point number"
+;Prompt for point number to delete.
+
+STRL_P_CURVE_AFTER_PNT		309	21
+"After point number"
+;Prompt for point number to insert after.
+
+STRL_P_STYLE_DEL		310	21
+"Style to delete ?"
+;Prompt when delete selected on style catalog
+
+STRL_P_PLL_SELECT_KEY		311	21
+"Select keyline"
+;Prompt message "Select keyline" during parallels
+
+STRL_P_PLL_SELECT_ORENT		312	21
+"Select orientation"
+;Prompt message "Select orientation" during parallels
+
+STRL_P_PLL_SELECT_LW		313	21
+"Select line weight"
+;Prompt to choose an lw from the lw palette during parallels
+
+STRL_P_PLL_SELECT_LS		314	21
+"Select line style"
+;Prompt to choose a ls from the ls palette during parallels.
+
+STRL_P_CURVE_REPOS_PNT		315	21
+"Reposition point"
+;Reposition curve point prompt.
+
+STRL_P_CURVE_PLANT_PNT		316	21
+"Plant point"
+;Plant Point Prompt.
+
+STRL_P_CURVE_SELECT_PNT		317	21
+"Select point"
+;Select point prompt.
+
+STRL_P_CURVE_INSERT_PNT		318	21
+"Insert point"
+;Insert point prompt.
+
+STRL_P_TRIM_1ST_PNT		319	21
+"Select first point"
+;Select first point to trim by
+
+STRL_P_TRIM_2ND_PNT		320	21
+"Select second point"
+;Select second point to trim by
+
+STRL_P_TRIM_CONFIRM		321	21
+"Confirm or Exit"
+;Confirm selected trim or exit trim
+
+STRL_P_BUBBLES_SIZE		322	21
+"Size ?"
+;Prompt for size selection in text bubbles
+
+STRL_P_BUBBLES_TEXT		323	21
+"Select text"
+;Prompt for text selection in text bubbles
+
+STRL_P_BUBBLES_DIAMETER		324	21
+"Diameter ?"
+;Prompt for diameter selection in text bubbles
+
+STRL_P_AREA_LABEL_AREA		325	21
+"Label area"
+;prompt for planting the area in dimension area and perimeter
+
+STRL_P_AREA_POS_CENT		326	21
+"Click within area"
+;position of the hatch center in dimension area and perimeter
+
+STRL_P_AREA_LABEL_PERIM		327	21
+"Label perimeter"
+;prompt for planting the perimeter in dimension area and perimeter.
+
+STRL_P_GRP_KEY_IN_NUMBER		328	21
+"Key in number"
+;copy - repeat prompt for enter of a number
+
+STRL_P_GRP_KEY_IN_ANGLE		329	21
+"Key in angle (+ or -)"
+;copy - radial repeat enter angle for items to be repeated through
+
+STRL_P_GRP_KEY_Y_OR_N		330	21
+"Key in Y or N"
+;copy - radial repeat - items to be rotated ? prompt.
+
+STRL_P_JOIN_1ST_ITEM		331	21
+"Select first item"
+;Break/extend - JOIN first item selection prompt
+
+STRL_P_JOIN_2ND_ITEM		332	21
+"Select second item"
+;Break/extend - JOIN second item selection prompt
+
+STRL_P_EXTEND_PNT		333	21
+"Extend to"
+;Break/extend - select extension point prompt
+
+STRL_P_RADIAL_ROT		334	21
+"Centre point?"
+;Radial repeat - center of rotation prompt
+
+STRL_P_RADIAL_ORIENT		335	21
+"Group origin?"
+;Radial repeat - center of orientaion prompt
+
+STRL_FIT_HEIGHT		336	21
+"Fit height ?"
+;Prompt - indicate the height of the FIT with the cursor
+
+STRL_P_3RD_CORNER		337	21
+"3rd corner ?"
+;Prompt - position the third corner of a box
+
+STRL_P_CHOOSE_ARC		338	21
+"Choose arc"
+;Prompt - select an arc
+
+STRL_P_FIRST_ELEMENT		339	21
+"Choose first element"
+;Prompt - select first element
+
+STRL_P_SECOND_ELEMENT		340	21
+"Choose second element"
+;Prompt - select second element
+
+STRL_P_FIRST_LINE		341	21
+"Choose first line"
+;Prompt - select first line
+
+STRL_P_SECOND_LINE		342	21
+"Choose second line"
+;Prompt - select second line
+
+STRL_P_THIRD_LINE		343	21
+"Choose third line"
+;Prompt - select third line
+
+STRL_P_FIRST_ARC		344	21
+"Choose first arc"
+;Prompt - select first arc
+
+STRL_P_SECOND_ARC		345	21
+"Choose second arc"
+;Prompt - select second arc
+
+STRL_P_CHOOSE_INTERSECT		346	21
+"Choose intersection"
+;Prompt - Find intersection
+
+STRL_P_CHOOSE_CHAMFER		347	21
+"Choose chamfer"
+;Prompt - Choose chamfer
+
+STRL_P_SELECT_LAST_KEYLINE		348	21
+"Select last keyline"
+;Prompt for parallel path stuff.
+
+STRL_P_THIRD_ELEMENT		349	21
+"Choose third element"
+;Prompt - select third element
+
+STRL_P_SPACE_BAR_STOP		350	21
+"Space bar to stop"
+
+STRL_P_COL_OFFSET		351	21
+"Enter column offset"
+;For square repeat
+
+STRL_P_ROW_OFFSET		352	21
+"Enter row offset"
+;For square repeat
+
+STRE_VO_RAN		353	50
+"Value out of range"
+;Error message - the number entered by the user is too large or small
+
+STRE_IN_MEM		354	50
+"Insufficient memory"
+;Error - not enough memory for the operation requested
+
+STRE_ERR_FM		355	40
+"Error %d"
+;Prints out 'Error <error-number>', used for most error numbers
+
+STRE_NI_FOUND		356	50
+"No item found"
+;Error - nothing to be found
+
+STRE_TM_ITEMS		357	50
+"Too many elements"
+;Too many elements in the cursor box
+
+STRE_IV_INPUT		358	50
+"Invalid input"
+;Input could not be understood
+
+STRE_TM_HDLES		359	50
+"Too many Handles"
+;Too many handles in the cursor box, OR total, in the drawing
+
+STRE_DSK_CHAN		360	50
+"Library changed\nContinue ?"
+;Warning message - a library diskette has been changed
+
+STRE_PRT_OFFLINE		361	40
+"Printer not online"
+;Printer is not on-line message
+
+STRE_PRT_SWITCHED_OFF		362	40
+"Printer not switched on"
+;Printer is not switched on message
+
+STRE_PRT_NOT_CONNECTED		363	40
+"Printer not connected"
+;Printer is not connected message
+
+STRE_PRT_PAPER_OUT		364	40
+"Printer out of paper"
+;Printer is out of paper message
+
+STRE_IDX_NO_ERROR		365	50
+"Index number out of range"
+;An invalid number was used to access an index.
+
+STRE_IDX_EXISTS		366	50
+"Index already exists"
+;The index the user asked the program to create already exists
+
+STRE_NO_TEXT		367	50
+"No Text found"
+;Warning message - no text blocks found by a function that looks for them.
+
+STRE_LOAD_WARNING		368	79
+"Current data will be overwritten - continue ?"
+;Warning message given on load that the current data will be overwritten
+
+STRE_SAM_SPACE_LIMIT		369	50
+"Limit of Evaluation data space"
+;The Evaluation version has a much smaller data space allowance.
+
+STRE_SAM_PLT		370	50
+"This drawing not plottable for Evaluation"
+;Some drawings cannot be plotted by the evaluation sample version of AccuCADD
+
+STRE_TEXT_TOO_LARGE		371	50
+"Text height too large"
+;Warning - The Text Height just entered is too large (max is 655 mm)
+
+STRE_INVALID_FILENAME		372	50
+"Invalid filename"
+;Warning - Filename incomprehensible or contains invalid characters
+
+STRE_PAPER_TOO_NARROW		373	50
+"Paper too narrow"
+;Warning - user-defined paper too small.
+
+STRE_PAPER_TOO_LARGE		374	50
+"Paper too large"
+;Warning - user-defined paper too big
+
+STRE_NO_IDX_PAGES		375	50
+"no index pages in library"
+;Warning - no index pages have been placed in this library
+
+STRE_S_NOT_FOUND		376	35
+"%s not found"
+;Warning - somthing couldn't be found - usualy a file.
+
+STRE_IDX_NOT_FOUND		377	50
+"Index not found"
+;Warning - index who's name or number was entered does not exist
+
+STRE_PRT_NOT_CONFIG		378	50
+"Printer not configured"
+;Warning - use of printer requested, without a printer in the configuration
+
+STRE_NOT_IMPLEMENTED		379	50
+"Not implemented"
+;Warning - feature not implemented.  Won't be produced by AccuCADD.
+
+STRE_LIST_FILE_ERROR		380	40
+"List file error"
+;Error writing library path or paper size list default file.
+
+STRE_ILL_TXT_HEIGHT		381	50
+"Illegal text height entered"
+;Warning - unusable value for text height entered.
+
+STRE_MAX_3_TRAPS		382	50
+"Only %d traps allowed"
+;Warning - only 3 angle traps can be active at one time
+
+STRE_PLT_OFFLINE		383	50
+"Plotter not online"
+;Error - plotter is in an OFF LINE state.
+
+STRE_NO_HANDLE		384	50
+"No Handle found"
+;No handles were found by a function looking for them
+
+STRE_WIPE		385	15
+"WIPE"
+;Warning - user about to destroy drawing by using Edit:Wipe.
+
+STRE_NOTHING_TOO_UNDO		386	50
+"Nothing to undo"
+;Warning - nothing avilable for UNDO to remove
+
+STRE_BOTH_CIRC_SAME		387	50
+"Both circles the same"
+;Warning - Attempt to take tangents between two circles, selected same one twice
+
+STRE_RADI_TOO_SMALL		388	50
+"Radius too small"
+;Warning - Radius too small to make 3 point arc or do TOOLKIT:TANGENT
+
+STRE_SHRINK_TOO_FAR		389	50
+"Shrink too far"
+;Warning - attempt to Shrink the drawing too much
+
+STRE_ON_SCRATCHPAD		390	50
+"Already on Scratchpad"
+;Warning - attempt to select the Scratchpad or Isolate while using them
+
+STRE_CANT_SCALE		391	50
+"Cannot scale - data will overflow"
+;Warning - User asked for such a huge change of Scale that data won't convert.
+
+STRE_SAVE_SETUP		392	20
+"Save setup"
+;Warning - issued when Setup:Save selected.
+
+STRE_SCRATCH_LOST		393	50
+"Scratchpad drawing will be lost"
+;Warning - selected Main Page without FILEing the scratchpad drawing
+
+STRE_RESET		394	16
+"Reset"
+;Warning mesage - produced when Edit:Reset selected.
+
+STRE_DRAW_SAVED		395	35
+"Leaving program.  All work saved ?"
+;Warning produced before exiting from the AccuCADD main program
+
+STRE_PAN_TOO_FAR		396	50
+"Pan too far"
+;Warning  - attempt to Pan right off the drawing.
+
+STRE_THIS_IDX		397	34
+"This index ?"
+;Prompt - select OK on warning palette to confirm that this is the right index
+
+STRE_INS_MISSING		398	50
+"Insert Missing - Index %u Position %u"
+;Warning - insert missing from library, giving its index and position
+
+STRE_CHANGE_PATH		399	60
+"CHANGING PATH. Please check library management in manual."
+;Warning produced when library path is changed
+
+STRE_FILE_EXISTS		400	50
+"File of same name exists"
+;Warning - a file exists already of the same name
+
+STRE_DEV_NOT_SCALE		401	50
+"Device not scaleable"
+;Produced by Setup:Digitizer if the current input device can't be scaled
+
+STRE_ORG_OUTSIDE_HATCH		402	50
+"Hatching origin outside box"
+;Warning - in using Draw:Hatch, the hatch seed was placed outside the hatch box
+
+STRE_FILLET_TOO_SMALL		403	50
+"Fillet radius too small"
+;Warning - the fillet radius is unusably small
+
+STRE_INVALID_FILLET		404	50
+"Invalid fillet"
+;Warning - the fillet is invalid
+
+STRE_FILTERS_ACTIVE		405	32
+"FILTERS ACTIVE"
+;Warning string displayed if Layer Filter is masking data during a File
+
+STRE_INVALID_FILE_POS		406	50
+"Invalid file position"
+;Warning - The index page position for a FILE is invalid
+
+STRE_BOX_TOO_SMALL		407	50
+"Box too small"
+;Warning - the library box size is too small for all the handles in the drawing
+
+STRE_DRAW_DEPENDS		408	50
+"Your drawing depends on this data"
+;Warning - Attempt to overfile one of the drawing's inserts
+
+STRE_OVERFILE		409	16
+"OVERFILE"
+;Warning - attempt to file a drawing on top of another drawing
+
+STRE_CANT_SAVE_DRAWING		410	50
+"Can't save drawing"
+;Warning - drawing can't be filed, but the program doesn't know why
+
+STRE_OVERWRITE_FILE		411	50
+"File Exists - Overwrite ?"
+;Warning - a file of the same name exists, and can be replaced by the new one
+
+STRE_NO_FILEPATH		412	50
+"File or pathname does not exist"
+;Warning - the named file or path does not exist
+
+STRE_TEXT_CANT_EXPLODE		413	50
+"Text cannot be exploded"
+;Warning - An Insert with text and a complex transformation cannot be exploded
+
+STRE_HAS_ELLIPSE		414	50
+"Invalid operation - contains ellipse"
+;Warning  - An insert with arcs and squash (or shear) cannot be exploded
+
+STRE_INS_TOO_DEEP		415	50
+"Inserts nested too deeply"
+;There are two many levels of njested inserts in the drawing
+
+STRE_CANT_CPY_COMMN		416	50
+"Can\'t copy Common Index"
+;Warning - the program can't copy from the common index & don't know why.
+
+STRE_ANGLE_TOO_SMALL		417	50
+"Angle too small"
+;Warning - The difference between angles of the user-defined grid is too small
+
+STRE_GRID_TOO_SMALL		418	50
+"Grid too small to display"
+;Warning - the grid points are too close to display at the current zoom view
+
+STRE_INSUF_DISK_SPACE		419	50
+"Insufficient disk space"
+;Warning - Not enough space on the disk for the requested operation.
+
+STRE_INSERTS_REFED		420	50
+"Inserts are referenced - continue ?"
+;Warning - Elements of this index are used by drawings in other indexes
+
+STRE_NO_KEY_INPUT		421	50
+"No numerical keyboard input possible"
+;Warning - no numerical keyboard input can be sensibly made at this point
+
+STRE_LIBS_SAME		422	50
+"Source and destination are same"
+;Warning - Copy Index has been given identical source & destination pathnames
+
+STRE_NO_IDX_IN_SOURCE		423	50
+"No indexes in source library"
+;Warning - There are no indexes in the source library to copy
+
+STRE_NO_IDX_IN_DEST		424	50
+"No indexes in destination library"
+;Warning - There must be some before copying can take place
+
+STRE_DEPS_EXIST		425	50
+"Components exist on destination library"
+;Warning - inserts of the drawings on the index being copied exist on the target
+
+STRE_COMP_ON_PRO_IDX		426	50
+"Can\'t file component on protected index"
+;Warning - an insert of a drawing on the copied index is from a protected index
+
+STRE_INSERT_TOO_BIG		427	50
+"Insert too large"
+;Warning - the insert's paper size & scale make it too big to fit in the drawing
+
+STRE_S_EXISTS		428	30
+"%s already exists"
+;Used as part of a warning that a file is already in existence.
+
+STRE_HAT_ELLIPT_ARCS		429	50
+"hatch contains elliptical arcs"
+;Warning - a hatch exists with an arc as a boundary, in an insert with squash
+
+STRE_STREAM_PROC_DATA		430	50
+"Processing data. Please wait"
+;Warning - The program is calculating, and you will have to wait for it.
+
+STRE_NO_IMPORT_TOS_PAD		431	50
+"Can't Import To Scratchpad"
+;Warning - Import cannot be used while in the Scratchpad
+
+STRE_CANT_IMP_IN_INS		432	50
+"Import not possible during Insert"
+;Warning - Import can't be used during the Drag or Frame insert functions
+
+STRE_CORRECT_RDF		433	50
+"Correct RDF File (%u Inserts) ?"
+;Prompt - is this the right imported drawing ?
+
+STRE_RENUMBER		434	20
+"Renumber?"
+;Prompt - should Import renumber inserts in the imported drawing ?
+
+STRE_CHECK_MAP		435	40
+"Check Map?"
+;Prompt - should Import check the Import Mapping File ?
+
+STRE_NO_INSECTS		436	50
+"No intersections"
+;Warning - no intersections between lines, arcs and circles available
+
+STRE_ARROW_OFF_SCREEN		437	50
+"Arrow head off screen"
+;Warning - the arrowhead planted in Draw:Arrow would be off the screen
+
+STRE_OVERWRITE_REFS		438	75
+"Referenced inserts exist in this Library - overwrite ?"
+;Warning - FILE onto a different library, has found inserts there
+
+STRE_CANT_FILE_COMP		439	50
+"Can't file component"
+;Warning - An insert into the drawing couldn't be stored on a FILE.
+
+STRE_STACK_OVERFLOW		440	50
+"Stack Overflow"
+;Warning - the set of nested functions being used is too complex.
+
+STRE_SYNTAX_ERROR		441	50
+"Syntax error"
+;An incomprehensible expression has been entered
+
+STRE_NO_ELEMENT_FOUND		442	50
+"No element found"
+;Dimension could not find any elements wethin the cursor box.
+
+STRE_HAT_ORG_ON_TXT		443	50
+"Hatch origin on text box"
+;Warning - hatching within text, which isn't allowed
+
+STRE_BRING_DATA		444	20
+"Bring data ?"
+;Prompt on warning palette - should the current data be taked to RoboSOLID ?
+
+STRE_RSOL_IGNOR_INST		445	60
+"Inserts will be ignored by RoboSOLID - continue ?"
+;Warning - the drawing contains inserts, which RoboSOLID will ignore.
+
+STRE_CANT_IMPORT		446	50
+"File %s can't be loaded - use IMPORT"
+;Warning - the file that was named on the command line can't be loaded.
+
+STRE_CANT_MAKE_TEMPFILE		447	40
+"Can\'t create temporary file"
+;Warning - Temporary file for copy index cannot be created
+
+STRE_UNITS_MM		448	7
+"mm"
+;Units : millimetres.  Always 'mm' on Status Bar.
+
+STRE_DRW_TOO_BIG		449	50
+"Drawing too large"
+;File being imported is too large to fit in the system.
+
+STRE_SS_ERROR		450	50
+"Serious System Error !"
+;Encounted an error the system is unlikely to recover from. (Virtual Memory)
+
+STRE_INVALID_LYR_NUMBER		451	25
+"Invalid layer number"
+;Change layer - warning message for invalid layer number entered.
+
+STRE_LYR_S_COL_NO_CNG		452	70
+"This layer is set to a single color. No change possible"
+;Change color - warning for layer set to one color.
+
+STRE_LYR_S_COL		453	50
+"Current Layer is set to a single color"
+;Active Layer is single color - Can't reselect from palette.
+
+STRE_LYR_S_LS		454	50
+"Current Layer is set to a single line style"
+;Active Layer is single style - Can't reselect from palette.
+
+STRE_NO_ACTIVE_LYR		455	50
+"No Active Layer"
+;Report on current active layer when no layer is active.
+
+STRE_LYR_NOT_FOUND		456	50
+"Layer not found"
+;Interrogation - Can't find layer (programme error)
+
+STRE_PLT_NOMAP		457	79
+"No color mapping has been set"
+;Message when user attempts to set a pen color before setting screen/pen map
+
+STRE_IMP_REASSIGN_LYRS		458	30
+"Reassign Layers ?"
+;Reassign new RDF layers no import.
+
+STRE_NO_COLPAL		459	40
+"Color palette not available"
+;Non valid access to color palette.
+
+STRE_PLT_CANT_OPEN		460	40
+"Can't open plot output file"
+;The specified plotter output file could not be opened.
+
+
+STRE_ERASE_LYR		461	20
+"Erase Layer"
+;Edit layer option.
+
+STRE_KEEP_LYR		462	20
+"Keep Layer"
+;Edit layer option.
+
+STRE_UNKNOWN_LYR		463	40
+"Unknown Layer"
+;Selected a layer that doesn't exist.
+
+STRE_ISOLATE_LYR		464	20
+"Isolate Layer"
+;Edit layer option.
+
+STRE_CANT_ISOLATE_LYR		465	40
+"Unable To Isolate Layer"
+;Unable to Isolate Layer Warning Message.
+
+STRE_CAT_LIST_FULL		466	40
+"Catalog List Full"
+;Relevent list is full warning.
+
+STRE_DRAG_TOO_LARGE		467	25
+"Drag image too large"
+;in drag function image is too large
+
+STRE_CORRUPT_DATA		468	30
+"corrupt data detected"
+;during filing corruption of data in memory was detected
+
+STRE_FILE_UPTO_CORRUPT		469	35
+"file data upto corrupt record?"
+;message asking if uncorrupt data in memory is to be filed
+
+STRE_PLT_NOT_SELECTED		470	30
+"Plotter not selected"
+;Error message - no plotter was selected at configuration
+
+STRE_PRT_NOT_SELECTED		471	30
+"Printer not selected"
+;Error message - no printer was selected at configuration
+
+STRE_PDF_READ_ERROR		472	20
+"error reading %s"
+;Error massage - error trying to read a AccuCADD data file (rc_1.prt, rc_1.plt)
+
+STRE_ZERO_LENGTH_DIM		473	30
+"Zero length dimension"
+;Warning that the selected dimension is zero length
+
+STRE_ILL_SELECTION		474	30
+"Illegal selection"
+;Illegal break selection
+
+STRE_BAD_EXTEND		475	30
+"Extend not possible"
+;Extension is not possible between two records
+
+STRE_BAD_TRIM		476	30
+"No break possible"
+;See 718.
+
+STRE_BAD_JOIN		477	30
+"Join of two circles not valid."
+;Join of two circles not possible
+
+STRE_RECS_NO_INSECTS		478	30
+"Records do not intersect"
+;Records for trim/extend do not intersect.
+
+STRE_CURVE_DEL_PNT		479	21
+"Delete Point Number :"
+;Prompt for point number to delete.
+
+STRE_CURVE_AFTER_PNT		480	21
+"After  Point Number :"
+;Prompt for point number to insert after.
+
+STRE_CURVE_NO_PNTS		481	40
+"No Points to Act on"
+;No points present to delete or insert after.
+
+STRE_CURVE_NO_OFFSET		482	40
+"No Point to Offset From"
+;No point present to act as offset origin.
+
+STRE_CURVE_NEED_5_PNTS		483	40
+"Not enough points to tune"
+;Curve type requires at least five points.
+
+STRE_CURVE_END_TO_FIX		484	40
+"End Curve To Fix"
+;Curve must be ended before it can be fixed.
+
+STRE_CURVE_NEED_ALL		485	40
+"Need All Points"
+;Can't delete any more points as all are required for trace.
+
+STRE_CURVE_NON_APPLIC		486	40
+"Not Applicable to this curve type"
+;Cursor mode does not apply to this curve type.
+
+STRE_S_CANT_OPEN		487	40
+"cannot open %s"
+;informative message with the file name replacing the %s
+
+STRE_FONT_UNAVAIL		488	79
+"Font %d is not available. Font 1 will be used instead"
+;The requested font is not available and font 1 will be used instead
+
+STRE_FONT_NOT_FOUND		489	30
+"Font not found"
+;The system cannot find the selected font
+
+STRE_STYLE_DEL		490	30
+"Select style to delete"
+;Prompt when delete selected on style catalog
+
+STRE_STYLE_NO_OVERWRITE		491	40
+"File cannot be overwritten"
+;Error message when the file to overwrite is read only
+
+STRE_STYLE_NO_STYLES		492	20
+"No styles"
+;Error message indicating that no styles exist to load
+
+STRE_STYLE_RESERVED		493	30
+"Reserved filename"
+;Error message indicating that the selected name is reserved
+
+STRE_STYLE_CANT_DELETE		494	30
+"Can't delete style"
+;Error message indicating that the selected style couldn't be deleted
+
+STRE_CONFIRM_OR_EXIT		495	50
+"Confirm or Exit before resetting palette"
+;Warning - in Change
+
+STRE_LYR_S_LS_NO_CNG		496	79
+"This layer is set to a single line style. No change possible"
+;Change color - warning for layer set to one line style.
+
+STRE_PLL_TOP_GAP_ERR		497	50
+"Top gap is out of range"
+;Warning message that the space between the top two parallels is out of range
+
+STRE_PLL_CENTRE_GAP_ERR		498	50
+"Centre gap is out of range"
+;Warning message that the space between the top two parallels is out of range
+
+STRE_PLL_BOTTOM_GAP_ERR		499	50
+"Bottom gap is out of range"
+;Warning message that the space between the top two parallels is out of range
+
+STRE_S_PLL_LYR_CLASH		500	79
+"CLASH WITH LAYER TABLE, CONTINUE ?"
+;Message when parallels data does not match the layer table
+
+STRE_PLL_LYR_OFF		501	50
+"layer is off"
+;Warning message when l/s, l/w, or col for a line with an OFF layer is selected.
+
+STRE_PLL_CORRECT_COL		502	79
+"line is set to correct color for layer"
+;Warning when trying to set a color on a parallel line with a 1 color layer.
+
+STRE_S_PLL_LYR_COL_IS		503	79
+"layer %d set to color %d"
+;Message given for a 1 color layer during parallels.
+
+STRE_PLL_CORRECT_LS		504	79
+"line is set to correct style for layer"
+;Warning when trying to set a l/s on a parallel line with a 1 style layer.
+
+STRE_S_PLL_LYR_LS_IS		505	79
+"layer %d set to line style %d"
+;Message given for a single l/s layer during parallels.
+
+STRE_ATTEMPT_CNG_TXT_LS		506	79
+"Attempt to change text L/S ignored"
+;Warning in change
+
+STRE_END_MV_BEFORE_CNG		507	50
+"Complete move before change"
+;warning given when change selected while still in move
+
+STRE_END_MV_BEFORE_ERAS		508	50
+"Complete move before erase"
+;warning given when erase selected while still in move
+
+STRE_IMP_ILLEGAL_VERS		509	30
+"Illegal version"
+;rdf file is of an illegal version
+
+STRE_CURR_PAGE_SELECTED		510	50
+"Current page selected"
+;warning when same page as current one is selected from page menu.
+
+STRE_IMP_CAT_STORE_PNT		511	60
+"Can't Store Point, Terminating Import"
+;Cannot store any more points in point list, in import points.
+
+STRE_CURVE_CANT_SCALE		512	60
+"Can't Scale Curve Nodes"
+;Cannot scale the nodes used by the curve cursor.
+
+STRE_PRT_GENERAL_ERROR		513	30
+"Printer Error"
+;General error message for printer errors.
+
+STRE_SAM_NOT_AVAIL		514	79
+"Not available for Evaluation"
+;Produced when you try a feature not available in the evaluation sampler.
+
+STRE_TZONE_SIZE		515	79
+"Trap zone is : %d\nNew trap zone = "
+;Window prompt for entry of trap zone size, in pixles.
+
+STRE_ZOOM_TOO_FAR		516	50
+"Zoom too far"
+;Warning - attempt to zoom further than possible
+
+
+STRE_FILE_NAME_EQ		517	20
+"File name ="
+;Window prompt for entering a file name.
+
+STRE_INVALID_PATHNAME		518	20
+"Invalid pathname"
+;Error message - the pathname input is invalid.
+
+STRE_SNAPSHOT		519	20
+"SNAPSHOT"
+;Warning message - snapshot (print screen) selected - abort continue.
+
+STRE_NO_DRIVER		520	50
+"Input device driver missing"
+;AccuCADD has been run without an input device driver having been loaded.
+
+STRE_S_FILE_SYNTAX_ERR		521	50
+"%ssyntax error at line %d"
+;error message about a system file that has been read.
+
+STRE_IMP_ASSIGN_LW_TO_LYR		522	50
+"Assign Line Weights to Layers ?"
+;Assign old RDF line weights to layers on import.
+
+STRE_IMP_RDF_CANT		523	50
+"RDF file contains no drawin"
+;Message produced when an RDF file has no data in it.
+
+STRE_DIM_NOT_BOTH_FREE		524	79
+"lead line length and stand off cannot both be free"
+;Error message - from dimension setup - can't set lead line & stand off as free.
+
+STRE_GRP_DATA_WILL_BE_LOST		525	79
+"Group data from previous page will be lost"
+;warning message during move - changing pages will lose group data.
+
+STRE_ENTER_RADIUS		526	30
+"Enter Radius"
+;input prompt for entering radius of an arc.
+
+STRE_ENTER_LENGTH		527	30
+"Enter Length"
+;input prompt for entering length of a line.
+
+STRE_ENTER_DIAMETER		528	30
+"Enter Diameter"
+;input prompt for entering diameter of a circle.
+
+STRE_ENTER_ANGLE		529	30
+"Enter Angle"
+;input prompt for entering an angle.
+
+STRE_ENTER_ZOOM_FAC		530	30
+"Enter Zoom factor (>1)"
+;input prompt for entering a zoom factor > 1.
+
+STRE_ENTER_SHRINK_FAC		531	30
+"Enter Shrink factor (>1)"
+;input prompt for entering a shrink factor > 1.
+
+STRE_TANGENT_ANGLE		532	30
+"New Tan Angle (0-360)"
+;input prompt for new tangent angle.
+
+STRE_TANGENT_MODULUS		533	30
+"New Mod Value (0-100)"
+;input prompt for new tangent modulus.
+
+STRE_CURVE_X_Y_OFFSET		534	30
+"x, y offset from start"
+;input prompt for KEY point on curves.
+
+STRE_AREA_PERIM_RES		535	50
+"Resolution (1 - 0.01), Currently %1.2f"
+;input prompt for area and perimeter - %1.2f replaced by default resolution.
+
+STRE_DEST_LIBRARY_IS		536	30
+"Destination library = "
+;input prompt for destination library in copy index.
+
+STRE_SOURCE_LIBRARY_IS		537	30
+"Source library = "
+;input prompt for source library in copy index.
+
+STRE_NEW_IDX_NUMBER		538	30
+"New Index number = "
+;input prompt for index number to be added by Library : Add Index.
+
+STRE_BUBBLES_SIZE		539	30
+"Enter Size"
+;input prompt for size entry on text balloons.
+
+STRE_RADIUS_IS		540	20
+"Radius = "
+;input prompt for entry of radius.
+
+STRE_NEW_IDX_NAME		541	30
+"New Index name = "
+;input prompt for entry of new index name.
+
+STRE_SCALED_LENGTH_IS		542	20
+"Scaled length ="
+;input prompt, in drawing units, of the length of a line on the digitizer.
+
+STRE_S_NEW_PATH_IS		543	50
+" Current %s path is:\n %s\n New path =\n"
+;prompt for entry of new path - %s replaced by path type and current path.
+
+STRE_PEN_WIDTH		544	20
+"Pen width"
+;input prompt for entry of pen width.
+
+STRE_LINE_WIDTH		545	20
+"Line width"
+;input prompt for width of line output on plotter.
+
+STRE_DIM_LEAD_LINE_LEN		546	30
+"Lead line length ?"
+;input prompt for entry of lead line length in dimension setup.
+
+STRE_DIM_EXTN_LINE_LEN		547	30
+"Extension line length ?"
+;input prompt for extension line length in dimension.
+
+STRE_OFF_LENGTH_IS		548	20
+"Offset length = "
+;input prompt for entry of offset of a dimension lead line.
+
+STRE_DIM_HLF_LINE_LEN		549	40
+"half dimension line length ?"
+;input prompt for entry of half dimension line length.
+
+STRE_DIM_CENT_MK_HEIGHT		550	30
+"Centre mark height ?"
+;input prompt for entry of centre mark height in dimension.
+
+STRE_TXT_HEIGHT		551	25
+"Text height = "
+;input prompt for entry of text height.
+
+STRE_DIM_TXT_STAND_OFF		552	30
+"Text stand off ?"
+;input prompt for entry of text stand off in dimension.
+
+STRE_SNP_ANGLE		553	20
+"Angle ="
+;input prompt for entry of user defined grid angle.
+
+STRE_SNP_SPACING		554	20
+"Spacing ="
+;input prompt for entry of user defined grid spacing.
+
+STRE_SNP_STEPS		555	20
+"Steps ="
+;input prompt for entry of user defined grid steps.
+
+STRE_DIM_PLUS_OR_MINUS		556	20
+"Plus or Minus ?"
+;input prompt for plus or minus entry on tolerance.
+
+STRE_DIM_PLUS_TOL		557	20
+"Plus tolerance ?"
+;input prompt for entry of plus tolerance.
+
+STRE_DIM_MINUS_TOL		558	20
+"Minus tolerance ?"
+;input prompt for entry of minus tolerance.
+
+STRE_DIM_MAX_TOL		559	20
+"Max value ?"
+;input prompt for entry of maximum tolerance.
+
+STRE_DIM_MIN_TOL		560	20
+"Min value ?"
+;input prompt for entry of minimum tolerance.
+
+STRE_IP_RADIUS		561	30
+"Radius ?"
+;input prompt for entry of radius.
+
+STRE_IP_DIAMETER		562	30
+"Diameter ?"
+;input prompt for entry of diameter.
+
+STRE_IP_ANGLE		563	30
+"Angle ?"
+;input prompt for entry of angle.
+
+STRE_DIM_DISTANCE_IS		564	18
+"Distance ?"
+;input prompt for tolerance size setting on dimension.
+
+STRE_IDX_NAME_IS		565	20
+"Index name = "
+;input prompt for entry of index name.
+
+STRE_IDX_NUMBER_IS		566	20
+"Index number = "
+;input prompt for entry of index number.
+
+STRE_PAP_WIDTH		567	30
+"Width ="
+;input prompt for entry of width.
+
+STRE_PAP_HEIGHT		568	30
+"Height ="
+;input prompt for entry of height.
+
+STRE_NEW_LYR_NUMBER		569	20
+"New layer number"
+;input prompt for entry of new layer number.
+
+STRE_NEW_SCALE_IS		570	20
+"New scale = "
+;input prompt for entry of a new scale factor.
+
+STRE_ANGLE_IS		571	20
+"Angle = "
+;input prompt for entry of an angle.
+
+STRE_CPY_SCALE		572	20
+"Scale = "
+;input prompt for entry of scale factor on frame insert.
+
+STRE_CPY_SCALE_X		573	20
+"X Scale = "
+;input prompt for entry of x scale on frame insert.
+
+STRE_CPY_SCALE_Y		574	20
+"Y Scale = "
+;input prompt for entry of y scale on frame insert.
+
+STRE_CPY_SQUASH		575	20
+"Squash = "
+;input prompt for entry of squash factor on frame insert.
+
+STRE_CPY_SHEAR		576	20
+"Shear = "
+;input prompt for entry of shear factor in frame insert.
+
+STRE_CPY_ROTATION		577	20
+"Rotation = "
+;input prompt for entry of rotation in frame insert.
+
+STRE_HATCH_SPACE_IS		578	20
+"Hatch spacing = "
+;input prompt for entry of hatch spacing.
+
+STRE_NIB_SPACE_IS		579	20
+"Nib space = "
+;input prompt for entry of nib space.
+
+STRE_DIM_LEADING_TXT		580	18
+"Leading text"
+;prompt for text whixh appears before size in dimension.
+
+STRE_DIM_TRAIL_TXT		581	18
+"Trailing text"
+;prompt for text which appears after tolerance in dimension.
+
+STRE_HEIGHT_IS		582	20
+"Height = "
+;input prompt for entry of text height.
+
+STRE_FONT_LINE_SPACE		583	20
+"Line Space"
+;input prompt for text line spacing.
+
+STRE_FONT_LINE_WIDTH		584	20
+"Line Width"
+;input prompt for text line width.
+
+STRE_FONT_CHAR_SPACE		585	20
+"Character Space"
+;input promt for text character spacing.
+
+STRE_FONT_SLANT_ANGLE		586	20
+"Slant Angle"
+;input prompt for text slant angle.
+
+STRE_DISTANCE		587	20
+"Distance ="
+;input prompt for entry of distance.
+
+STRE_X_Y_OFFSET		588	20
+"X, Y offset ="
+;input prompt for entry of x y offset
+
+STRE_R_0_OFFSET		589	20
+"r, \332 offset ="
+;input prompt for entry of radius angle offset
+
+STRE_X_Y_POS		590	20
+"X, Y position ="
+;input prompt for entry of x y position
+
+STRE_ARC_TOO_SMALL_FOR_ARW		591	40
+"Arc too small for arrow"
+;The selected arc is to small to draw the arrow on during dimensioning.
+
+STRE_CURVE_STEPS		592	30
+"Steps ? (1 - 64)"
+;New step increment input window prompt.
+
+STRE_ENTER_LYR_NUMBER		593	30
+"Enter Layer Number"
+;New layer number input window prompt
+
+STRE_REPEAT_N_OF_COLS		594	30
+"Number of columns ="
+;number of columns for repeating an 'array' of images.
+
+STRE_REPEAT_COL_SPACE		595	40
+"Space between columns ="
+;Space between columns of a repeated 'array', as an offset from the original.
+
+STRE_REPEAT_N_OF_ROWS		596	30
+"Number of rows ="
+;number of rows for repeating an ' array' of images.
+
+STRE_REPEAT_ROW_SPACE		597	40
+"Space between rows ="
+;Space between rows of a repeated 'array', as an offset from the original.
+
+STRE_REPEAT_N_OF_COPIES		598	40
+"Number of copies ="
+;number of copies of the repeated item.
+
+STRE_REPEAT_TOTAL_ANGLE		599	40
+"Total angle from first to last ="
+;the total angle over which the repeated items are to be drawn.
+
+STRE_REPEAT_ROTATE_ITEMS		600	30
+"Rotate items ? (Y/N)"
+;should the items be rotated during a circular repeat.
+
+STRE_R_0_POS		601	20
+"r,\332 position ="
+;Prompt for entry of a radius, angle position (relative to last handle, 'P')
+
+STRE_AREA_ORG_OUT_BOX		602	50
+"Area origin outside box"
+;Warning - in using Dimension:Area seed was placed outside the area box
+
+STRE_EXIT_CONF_DATA_LOSS		603	79
+"Data will be lost on page %d Exit ?"
+;Warning given on exit if data is on page 1 or 2, %d replaced by page
+
+STRE_PAGE_CONF_SCRATCH_LOSS		604	79
+"Data will be lost on scratchpad Continue ?"
+;Warning given on page change from scratchpad if any data on it
+
+STRE_FILE_NO_EXIST		605	79
+"File does not exist"
+;The file specified by the user cannot be found
+
+STRE_AREA_PERIM_CANT_DIM		606	50
+"Can't dimension area"
+;Error from area and perimeter if unable to dimension area
+
+STRE_PARALLEL_ARC_TOO_SML		607	50
+"Unable to draw zero\ndiameter parallel"
+;warning in parallels that an arc or circle can't be drawn
+
+STRE_PLL_SPACER_GAP_ERR		608	50
+"Spacer gap is out of range"
+;Warning : space between the side keyline and bottom parallel is invalid
+
+STRE_GRP_DRAG		609	15
+"Drag"
+;Option in move or copy window
+
+STRE_GRP_FRAME		610	15
+"Frame"
+;Option in move or copy window
+
+STRE_GRP_OFFSET		611	15
+"Offset"
+;Option in move or copy window
+
+STRE_GRP_SQREPEAT		612	15
+"Square Repeat"
+;Option in copy window
+
+STRE_GRP_RADREPEAT		613	15
+"Radial Repeat"
+;Option in copy window
+
+STRE_OLD_COL_NO		614	15
+"Old Col No.: %d"
+;color selection window 'Old color number' prompt. Don't change %d
+
+STRE_NEW_COL_NO		615	15
+"New Col No.: "
+;color selection window 'Old color number' prompt. Don't change %d
+
+STRE_IMAGE_PLOTTER		616	25
+"Plotter"
+;output destination plotter selection
+
+STRE_IMAGE_PRINTER		617	25
+"Printer"
+;output destination printer selection
+
+STRE_IMAGE_GEM		618	25
+"Gem (IMG)"
+;output destination Gem style
+
+STRE_IMAGE_PAINTBRUSH		619	25
+"Paintbrush"
+;output destination Paintbrush style
+
+STRE_IMAGE_SCRIBE		620	25
+"RoboBUILD (PLO)"
+;output to RoboBUILD plot file.
+
+STRE_IMAGE_PAINTBRUSH_PCX		621	25
+"Paintbrush (PCX)"
+;output/image Paintbrush PCX style
+
+STRE_IMAGE_PAINTBRUSH_PCC		622	25
+"Paintbrush (PCC)"
+;output/image Paintbrush PCC style
+
+STRE_CIRCLE_NO_INTERSECT		623	25
+"No intersects with circle"
+;Dimmension:arrow found no intersects with the selected circle
+
+STRE_DIM_TOLERANCE_IS		624	20
+"Tolerance ?"
+;Prompt on tolearance - AccuCADD
+
+STRE_DIM_LENGTH_IS		625	20
+"Length ?"
+;Prompt on tolerance - AccuCADD
+
+STRE_DIM_ANGLE_IS		626	20
+"Angle ?"
+;Prompt on tolerance - AccuCADD
+
+STRE_NO_CIRCLE_FOUND		627	50
+"No circle found"
+;Dimension could not find circle - AccuCADD
+
+STRE_INS_INTERSECT_BOX		628	50
+"Inserts intersect box. Explode ?"
+;Error string in groups
+
+STRE_DIM_TXT_TO_BIG		629	50
+"Text to big for gap"
+;Dimension error in AccuCADD when text height too big for gap
+
+STRE_DIM_BIG_RADIUS		630	50
+"Big radius"
+;Dimension - AccuCADD dim - circle string
+
+STRE_DIM_RADIUS_SIGN		631	10
+"R"
+;Sign used for dimension radius
+
+STRE_TOO_MANY_SIZES		632	60
+"Only 14 paper sizes allowed in plotter driver"
+;Error message on reading .plt file for too many paper sizes
+
+STRE_CURRENT_TABLE		633	30
+"Current %s is %s"
+;Reports current [Fit Table] or [Height Table] is [filename].
+
+STRE_NO_TABLE		634	30
+"No current %s"
+;Reports no current [Fit Table] or [Height Table].
+
+STRE_TABLE_CATALOG		635	17
+"Table Catalog"
+;Title of Fit or Height table directory.
+
+STRE_ERROR_PLOT		636	50
+"Plotting error"
+;Error whilst plotting
+
+STRE_ERROR_MAC_DEL		637	50
+"Error removing %s"
+;Error whilst deleting an index. %s refers to the filename of the macro
+
+STRE_LOAD_BACKUP		638	65
+"A data back-up has been found. Do you wish to load it?"
+;Warning message on reset if back-up exists on disk.
+
+STRE_NO_KEYTABLE		639	50
+"No current Key Table"
+;Error message in EDIT/FIT if no key table has been loaded.
+
+STRE_KEYMAP_BAD_INDEX		640	50
+"Bad index number at line %d of key table file"
+;Bad index no. detected in key table mapping file while loading it.
+
+STRE_KEYMAP_BAD_MACRO		641	50
+"Bad drawing number at line %d of key table file"
+;Bad macro no. detected in key table mapping file while loading it.
+
+STRE_KEYMAP_BAD_HANDLE		642	50
+"Bad handle number at line %d of key table file"
+;Bad handle no. detected in key table mapping file while loading it.
+
+STRE_KEYMAP_DEF_STR1		643	50
+"Default"
+;Valid string syntax for key table kerning file default declaration.
+
+STRE_KEYMAP_DEF_STR2		644	50
+"DEFAULT"
+;Valid string syntax for key table kerning file default declaration.
+
+STRE_KEYMAP_DEF_STR3		645	50
+"default"
+;Valid string syntax for key table kerning file default declaration.
+
+STRE_KERN_BAD_PERCENT		646	50
+"Bad percentage at line %d of kern file"
+;Kerning file contains an invalid kern percentage.
+
+STRE_KERN_BAD_LINE		647	50
+"Bad line %d of kern file"
+;Kerning file contains an invalid line.
+
+STRE_KERN_BAD_CHAR		648	50
+"Invalid kerning character"
+;Kerning file contains an invalid kern character.
+
+STRE_FIT_UNMAPPED_CHAR		649	50
+"Character '%s' not referenced in Key Table"
+;Attempt by DRAW/FIT to use an unmapped character.
+
+STRE_LOAD_VIA_KEYMAP		650	50
+"Press key or enter ALT code"
+;Window prompt for loading via Key Table map
+
+STRE_KEYMAP_BAD_PATH		651	50
+"Bad Key Table library path"
+;Key table mapping file contains an invalid path
+
+STRE_DUP_INSERTS		652	50
+"Duplicate inserts on other page"
+;Imported data is duplicating insert on another page.
+
+STRE_PEN_SORT		653	20
+"Pen sort"
+;Pen sort selection
+
+STRE_RECORD_ORDER		654	20
+"Record order"
+;Record order selection
+
+STRE_BACKUP_FREQUENCY		655	50
+"Frequency of Auto Backup (minutes)"
+;Input window to enter number of minutes between auto saving
+
+STRE_WRONG_HARDWARE		656	50
+"Box text not available without FAST VIEW"
+;Harware does not allow display of text as boxes
+
+STRE_RECOVER_FAILED		657	50
+"No backups found"
+;Load backup was selected when backups did not exist
+
+STRE_LOSE_PAGE_DATA		658	50
+"Data on page %d will be overwritten - continue ?"
+;Option to abandon load of backup over existing data on page number (%d)
+
+STRE_ENTER_ID		659	50
+"Enter user identity"
+;Input window for send message user identities.
+
+STRE_MAIL_FROM		660	50
+"From"
+;Message header
+
+STRE_MAIL_TO		661	50
+"To  "
+;Message header
+
+STRE_MAIL_DATE		662	50
+"Date"
+;Message header
+
+STRE_MAIL_TIME		663	50
+"Time"
+;Message header
+
+STRE_MAIL_ALL_USERS		664	50
+"ALL USERS"
+;Valid input for send message input window.
+
+STRE_MAIL_FOUND		665	50
+"A message has been received. OK to read?."
+;Warning window message detected.
+
+STRE_MAIL_MORE		666	80
+"    <<< Another message follows. Press left mouse button to continue. >>>"
+;Appears during display of messsages if more follow.
+
+STRE_CANT_ACCESS1		667	80
+"Cannot access %s"
+;Network can't access a file for reasons other than locking.
+
+STRE_CANT_ACCESS2		668	80
+"Time-out: %s in use by %s - user no: %d"
+;Network can't access a file because of locking.
+
+STRE_CANT_ACCESS3		669	80
+"Time-out: %s in use by user no: %u"
+;Network can't access a file because of locking.
+
+STRE_CANT_ACCESS4		670	80
+"Time-out: %s in use by another user."
+;Network can't access a file because of locking.
+
+STRE_CANT_ACCESS5		671	80
+"Cannot access directory %s for %s"
+;Network can't access directory because of restricted permissions.
+
+STRE_NO_POLY_SIDES		672	30
+"Number of sides"
+;DRAW/POLYGON input window for number of polygon sides.
+
+STRE_UPDATE_MAC		673	30
+"Update isolated insert ?"
+;Abort / continue for updating an isolated insert
+
+STRE_NO_LAYER		674	15
+"NO LAYER"
+;Reports no current layer on TOOKIT:FIND
+
+STRE_ALL_LAYERS		675	15
+"ALL LAYERS"
+;Reports layer set to ALL LAYERS on TOOKIT:FIND
+
+STRE_ENTER_HEIGHT		676	30
+"Enter Height"
+;input prompt for entering height of a FIT.
+
+STRE_HEIGHT_TABLE_ERROR		677	70
+"Error in line %d of height table - use defaults ?"
+;Warning of syntax error in height table - %d is converted to a line number
+
+STRE_DRAWING_BOOKED		678	70
+"Drawing already booked out by %s - %u"
+;Warning that attempt was made to book an already booked drawing
+
+STRE_UNBOOK_DRAWING		679	70
+"Do you wish to unbook this drawing"
+;Window request when filing
+
+STRE_AUTO_BOOKING		680	70
+"Enable auto-booking for this index"
+;When adding new index, requests if index is to have auto-booking of drawings.
+
+STRE_BOOKING_FORCED		681	70
+"Index has auto-booking which may not be disabled"
+;Selecting booking icon from index with auto-booking
+
+STRE_LYR_ONE_DEL		682	50
+"Delete layer entry (y/n) "
+;Delete prompt for layer table
+
+STRE_LYR_BLOCK_DEL		683	50
+"Delete all marked layer entries (y/n) "
+;Delete prompt for layer table
+
+STRE_LYR_WIPE_FIRST		684	50
+"Wipe all drawing pages before deleting layers "
+;Delete prompt for layer table
+
+STRE_LYR_PRESS_ANY		685	20
+" Press a key "
+;Delete prompt for layer table
+
+STRE_TED_SAVE_CHANGES		686	50
+"%d buffers unsaved - Exit (y/n/save) "
+;Text editor - %d is replaced with a number 'save' must match rcad4x.txt
+
+STRE_TED_BLK_COPIED		687	35
+"Block copied"
+;Editor prompt
+
+STRE_TED_NO_BLOCK		688	35
+"No block to insert"
+;Editor prompt
+
+STRE_TED_FERR_FINDING		689	20
+"finding"
+;Editor - part of file error message
+
+STRE_TED_FERR_OPENING		690	20
+"opening"
+;Editor - part of file error message
+
+STRE_TED_FERR_TOO_LGE		691	20
+"too large"
+;Editor - part of file error message
+
+STRE_TED_FERR_MEMORY		692	25
+"getting memory for"
+;Editor - part of file error message
+
+STRE_TED_FERR_READING		693	20
+"reading"
+;Editor - part of file error message
+
+STRE_TED_FERR_WRITING		694	20
+"writing"
+;Editor - part of file error message
+
+STRE_TED_FERR_CLOSING		695	20
+"closing"
+;Editor - part of file error message
+
+STRE_TED_FERR_DEL_BAK		696	25
+"deleting backup of"
+;Editor - part of file error message
+
+STRE_TED_FERR_MAKE_BAK		697	25
+"making backup of"
+;Editor - part of file error message
+
+STRE_TED_FERR_VARIABLE		698	35
+"Error %s file %s"
+;Editor error message - first %s is replace with error (above) second with file
+
+STRE_TED_HELP_PMT		699	40
+"PGUP PGDN or ESC to exit help"
+;Editor help prompt
+
+STRE_TED_REPLACE		700	40
+"Replace with"
+;Editor prompt
+
+STRE_TED_YES_NO_ALL		701	40
+"Replace (y/n/all)"
+;Editor prompt
+
+STRE_TED_MANY_LINES		702	40
+"Too many lines"
+;Editor error message
+
+STRE_TED_SEARCH_MODEL		703	40
+"Enter search pattern"
+;Editor prompt for search pattern
+
+STRE_TED_MODEL_NOT_FOUND		704	40
+"Search pattern not found"
+;Editor error message
+
+STRE_TED_OVERWRITE_FILE		705	40
+"Overwrite file (y/n) "
+;Editor prompt - replace y and n with yes and no characters
+
+STRE_ENV_NAME		706	40
+"PC name     : %s"
+;Toolkit - Environment window string
+
+STRE_BOOKED_NAME		707	80
+"Aborted - Index %5.5u Drg %3.3d booked by %s (%3.3d)"
+;Operation aborted because drawing is booked. Used by maintenance.
+
+STRE_NON_NETWORKED		708	20
+"NON-NETWORKED"
+;Default user name on non-networked system
+
+STRE_MAIL_ID_NO		709	16
+"user no"
+;Toolkit - Send message header string
+
+STRE_UNKNOWN_ID		710	20
+"Unknown user ID "
+;Toolkit - Send message error - specified user ID not valid
+
+STRE_MAIL_NAME		711	16
+"name: "
+;Toolkit - Send message error
+
+STRE_MAIL_NO		712	16
+"number: "
+;Toolkit - Send message error
+
+STRE_BOOKED_NO		713	80
+"Aborted - Index %5.5u Drg %3.3d booked by user no %3.3d)"
+;Operation aborted because drawing is booked. Used by maintenance.
+
+STRE_OLD_DFT_FILE		714	50
+"Warning - %s has incorrect version"
+;Defaults file has been saved with an earlier version of AccuCADD
+
+STRE_DPDATA_ERR		715	80
+"Error reading palette %d. Possibly incorrect %s"
+;Error when palette definition file (%s) doesn't match the palette number (%d)
+
+STRE_TOUCH_ERR		716	80
+"No touching circle"
+;No Circle touches the lines selected
+
+STRE_LOG_MAC		717	80
+"INDEX NAME   NO. DRG  REV  SIZE    DATE     TIME   LAST USER ID TITLE\n"
+;Title header written to log file, log.net when filing.
+
+STRE_OVERWRITE_AND_UNBOOK1		718	80
+"You have referenced insert %3.3u on index %5.5u booked out. "
+;Copy index where referenced index is booked to user.
+
+STRE_OVERWRITE_AND_UNBOOK2		719	80
+"Overwrite and unbook it?"
+;Copy index where referenced index is booked to user.
+
+STRE_REFER_INSERT_BOOKED1		720	80
+"Referenced insert %3.3d on index %5.5u is booked out to user %s (%3.3u). "
+;Copy index where referenced index is booked to another user.
+
+STRE_REFER_INSERT_BOOKED2		721	80
+"This will not be overwritten. Continue?"
+;Copy index where referenced index is booked to another user.
+
+STRE_TED_LOAD_FNAME		722	15
+"File to load"
+;Text editor prompt
+
+STRE_TED_SAVE_FNAME		723	15
+"File to save"
+;Text editor prompt
+
+STRE_PARAMETERS		724	15
+"Parameters ?"
+;Prompt for sending parameters to a run other file
+
+STRE_READ_ONLY_INDEX		725	15
+"READ ONLY"
+;Read only index message
+
+STRE_WRITE_PROTECTED		726	50
+"Index is WRITE PROTECTED"
+;Write protected index message
+
+STRE_NET_FILE		727	10
+"file"
+;Used by network retry error
+
+STRE_NET_READ_WRITE		728	15
+"read/write"
+;Network access failure for read/write
+
+STRE_NET_READING		729	15
+"reading"
+;Network access failure for reading
+
+STRE_NET_WRITING		730	15
+"writing"
+;Network access failure for writing
+
+STRE_REF_INSERTS		731	20
+"Index : Insert"
+;Header for list of referenced inserts produced when overfiling
+
+STRE_BOOKING_IN_INDEX		732	80
+"You have drawings booked out on library: %s index no: %u. Continue?"
+;Copy or delete index warning message
+
+STRE_BOOKING_DISABLED		733	60
+"Booking has been disabled - READ ONLY index"
+;Selecting booking icon on READ ONLY index
+
+STRE_NOT_AVAIL		734	50
+"Function not available in this product"
+;Message when selecting a disabled menu option
+
+STRE_NOT_AVAIL2		735	40
+" - Drawing contains non-evaluation data"
+;Second part appears in sampler when attempting to output non-evaluation data
+
+STRE_PDF_SYNTAX_ERROR		736	50
+"Syntax error at line %d of PDF"
+;Error when loading a plotter descriptor file
+
+STRE_UPDATE		737	20
+"UPDATE"
+;Warning when overfiling same drawing
+
+STRE_PALETTE_INPUT		738	50
+"(Number)(Index)(Status)"
+;Prompt for keyboard palette operation
+
+STRE_PROMPT_INPUT		739	50
+"Enter prompt"
+;Prompt for keyboard prompt operation
+
+STRE_RUN_OTHER_CATALOGUE		740	16
+"File Catalog"
+;Title of run other file catalog
+
+STRE_NO_HELP		741	30
+"No Help Available"
+;Warning if no help for a menu function
+
+STRE_Z_PREC_ALL_ZEROES		742	12
+"100.00..."
+;In zero precision window all zeroes.
+
+STRE_Z_PREC_ONE_ZERO		743	12
+"100.0"
+;In zero precision window one zero after decimal pt.
+
+STRE_Z_PREC_PT		744	12
+"100."
+;In zero precision window just decimal pt.
+
+STRE_Z_PREC_NO_PT		745	12
+"100"
+;In zero precision window no decimal pt.
+
+STRE_MENU_INPUT		746	50
+"(Menu Number)(Menu Index)"
+;Prompt for keyboard menu operation
+
+STRE_WINDOW_INPUT		747	50
+"(Window Number)"
+;Prompt for keyboard window operation
+
+STRE_WHOLE_FILE		748	40
+"Print whole file (y/n) "
+;Prompt for snapshot of whole file or just current page when in text mode
+
+STRE_INSERT_CHANGED		749	75
+"An insert in your drawing has been updated by another user"
+;Prompt when changing library path and updated insert is found
+
+STRE_VAR_TABLE		750	25
+"Variable Table"
+;Window item - choose to load a variable table
+
+STRE_VAR_VAR		751	40
+"Enter Variable Name"
+;Prompt for entering a variable name
+
+STRE_VAR_TOO_LONG		752	40
+"Variable too long"
+;Replace variable will be longer than input window
+
+STRE_HEIGHT_TABLE		753	25
+"Height Table"
+;Window item - choose to load an height table
+
+STRE_KEY_TABLE		754	25
+"Key Table"
+;Window item - choose to load a key table
+
+STRE_RENUMBER_LAYER		755	20
+"Renumber Layer"
+;Edit layer option.
+
+STRE_PATH_LIBRARY		756	15
+"Library"
+;Set Path menu - select to set Library path
+
+STRE_PATH_RDF		757	15
+"RDF"
+;Set Path menu - select to set RDF path
+
+STRE_PATH_TEXT		758	15
+"Text"
+;Set Path menu - select to set Import text path
+
+STRE_PATH_TABLES		759	15
+"Height Tables"
+;Set Path menu - select to set Tables path
+
+STRE_RENUMBER_LYR_TO		760	20
+"New Layer"
+;Edit layer prompt for the layer to renumber to
+
+STRE_SORT_INDEX		761	14
+" Sort Index"
+;Sort index string for catalog
+
+STRE_CAT		762	16
+" Index catalog"
+;Header line of the index catalog display
+
+STRE_CAT_NUM_NAME		763	16
+" Number : Name"
+;Second line of the index catalog display.  Retain the ':'
+
+STRE_LIB_LIST_OPT		764	16
+"Find Library"
+;First line of the library utilities display.
+
+STRE_LIB_PERMS_OPT		765	16
+"Permissions"
+;Second line of the library utilities display.
+
+STRE_LIB_USER_BK_OPT		766	16
+"User Booking"
+;Third line of the library utilities display.
+
+STRE_LIB_INDEX_BK_OPT		767	16
+"Index Booking"
+;Fourth line of the library utilities display.
+
+STRE_LIB_NET_ACCS_OPT		768	16
+"Network Access"
+;Fifth line of the library utilities display.
+
+STRE_ENTER_SRCH_PTH		769	60
+"Enter Search-path"
+;input prompt for entering directory to search.
+
+STRE_ENTER_USER_ID		770	60
+"Enter User-Name or User-Number"
+;input prompt for entering user name or number.
+
+STRE_ENTER_INDEX		771	60
+"Enter Index"
+;input prompt for entering index page.
+
+STRE_NO_LIB_MSG		772	60
+"No AccuCADD libraries found on search-path %s \n\n"
+;Library utilities text
+
+STRE_LIBS_MSG		773	60
+"\nAccuCADD libraries on search-path %s ...\n\n"
+;Library utilities text
+
+STRE_LIB_READ_PERM		774	60
+"Library path has READ ONLY permission\n"
+;Library utilities text
+
+STRE_INDEX_READ_PERM		775	60
+"Index %s has READ ONLY permission\n"
+;Library utilities text
+
+STRE_LIB_READ_WRT_PERM		776	60
+"Library path has READ/WRITE permission\n"
+;Library utilities text
+
+STRE_INDEX_READ_WRT_PERM		777	60
+"Index %s path has READ/WRITE permission\n"
+;Library utilities text
+
+STRE_PERM_MSG		778	60
+"\nPermissions for files in AccuCADD library %s ...\n\n"
+;Library utilities text
+
+STRE_USER_BKD_FILE		779	60
+"%3.3d %s | Index page %s | position %3.3d\n"
+;Library utilities text
+
+STRE_INDEX_BKD_FILE		780	60
+"Index page %s | position %3.3d | %3.3d %s\n"
+;Library utilities text
+
+STRE_BKD_FILES_MSG		781	60
+"\nBooked files in AccuCADD library %s ...\n\n"
+;Library utilities text
+
+STRE_INDEX_NO_BKD_MSG		782	60
+"No booked files on index page %s in library %s\n\n"
+;Library utilities text
+
+STRE_USER_NO_BKD_MSG		783	60
+"User %3.3d %s has no booked files in library %s\n\n"
+;Library utilities text
+
+STRE_USER_ACCESS_R		784	60
+"%3.3d %s is accessing %s (SHARE READ)\n"
+;Library utilities text
+
+STRE_USER_ACCESS_W		785	60
+"%3.3d %s is accessing %s (SHARE WRITE)\n"
+;Library utilities text
+
+STRE_USER_ACCESS_RW		786	60
+"%3.3d %s is accessing %s (SHARE READ/WRITE)\n"
+;Library utilities text
+
+STRE_USER_ACCESS_MSG		787	60
+"\nUsers currently accessing AccuCADD library %s ...\n\n"
+;Library utilities text
+
+STRE_NO_USER_ACCESS_MSG		788	60
+"No users are currently accessing %s\n\n"
+;Library utilities text
+
+STRE_BAD_SRCH_PTH		789	60
+"Invalid Search-path"
+;Library utilities text
+
+STRE_BAD_USER_ID		790	60
+"Invalid User-Name or User-Number"
+;Library utilities text
+
+STRE_BAD_INDEX		791	60
+"Invalid Index"
+;Library utilities text
+
+STRE_WINDOW_INDEX		792	50
+"Enter window index"
+;For keyboard macro window and status window selection
+
+STRE_ZOOM_TITLE		793	30
+"Save Zoom"
+;Title for save zoom status window
+
+STRE_ZOOM_NAME		794	30
+"Enter zoom name"
+;Prompt for naming a saved zoom
+
+STRE_NO_ZOOMS		795	40
+"No zooms have been saved"
+;Error when selecting load zoom when no zooms have been saved
+
+STRE_LEN_PRECIS		796	12
+"Length"
+;Precision status window
+
+STRE_ZERO_PRECIS		797	12
+"Zero"
+;Precision status window
+
+STRE_ANGLE_PRECIS		798	12
+"Angle"
+;Precision status window
+
+STRE_PRECIS_TITLE		799	12
+"Precision"
+;Precision status window
+
+STRE_REPLAY_MAC		800	30
+"Replay"
+;Keystroke sub window
+
+STRE_RECORD_MAC		801	30
+"Record"
+;Keystroke sub window
+
+STRE_TERMINATE_MAC		802	50
+"Terminate Record of Keystrokes ?"
+;Warning on termination of keystroke recording
+
+STRE_MAC_NAME		803	50
+"Enter Keystroke Macro Filename or Alt Key"
+;Prompt for naming of a keystroke macro
+
+STRE_USER_HATCH_TITLE		804	20
+"Hatch Settings"
+;Status window title
+
+STRE_USER_HATCH_WHOLE_TILES		805	20
+"Whole tiles"
+;Use whole patterns only in user hatch
+
+STRE_USER_HATCH_BL_ORIGIN		806	20
+"Boundary Origin"
+;Set origin of user hatch to bottom left of boundary
+
+STRE_USER_HATCH_ATTRIBUTES		807	20
+"Use tile attributes"
+;Use tile attributes rather than hatch attributes
+
+STRE_USER_HATCH_TRANSFORM		808	20
+"Transform in inserts"
+;Transform user hatch pattern in inserts
+
+STRE_USER_HATCH_NOT_SCALED		809	20
+"Tiles not scaled"
+;Do not scale the data
+
+STRE_CHANGE_TEXT_TITLE		810	20
+"Change Text"
+;Title on edit:text:change window
+
+STRE_CHANGE_TEXT_VARIABLE		811	8
+"VARIABLE"
+;edit:text:change window - word for leaving text attribute unchanged
+
+STRE_CHANGE_TEXT_HEIGHT		812	20
+"Height"
+;Change height on edit:text:change window
+
+STRE_CHANGE_TEXT_LSPACE		813	20
+"Line Spacing"
+;Change line spacing on edit:text:change window
+
+STRE_CHANGE_TEXT_CSPACE		814	20
+"Character Spacing"
+;Change character spacing on edit:text:change window
+
+STRE_CHANGE_TEXT_SLANT		815	20
+"Character Slant"
+;Change slant on edit:text:change window
+
+STRE_CHANGE_TEXT_ROTATION		816	20
+"Rotation"
+;Change rotation on edit:text:change window
+
+STRE_CHANGE_TEXT_LW		817	20
+"Lineweight"
+;Change lineweight on edit:text:change window
+
+STRE_EDIT_MAC		818	30
+"Edit"
+;Keystroke sub window
+
+STRE_SORT_DATA_TITLE		819	25
+"Sort data settings"
+; Sort data status window title
+
+STRE_SORT_DATA_ATTRIBUTES		820	25
+"Sort by layer"
+; Sort data using layer
+
+STRE_SORT_DATA_COINCIDENT		821	25
+"Coincident elements kept"
+; Will leave coincident elements in path
+
+STRE_SORT_DATA_COPY_REC		822	25
+"Inserts in path"
+; Inserts will be reqarded as zero length line
+
+STRE_SORT_DATA_HANDLE_REC		823	25
+"Handles in path"
+; Handles will be reqarded as zero length line
+
+STRE_SORT_DATA_TEXT_REC		824	25
+"Text in path"
+; Text will be reqarded as zero length line
+
+STRE_NOT_USER_HATCH		825	20
+"Not user hatch"
+;User has selected old hatch record
+
+STRE_USER_HATCH_EXP		826	20
+"Explode"
+;User hatch edit sub window
+
+STRE_USER_HATCH_REP		827	20
+"Replace"
+;User hatch edit sub window
+
+STRE_NOT_ON_BOUNDARY		828	20
+"Not on boundary"
+;Selected record does not form part of boundary
+
+STRE_NO_PATH_STARTED_BOUNDARY		829	20
+"No boundary started"
+;The boundary must have been started for path to do anything
+
+STRE_PURGE_TITLE		830	20
+"Purge options"
+;Title for purge option window
+
+STRE_PURGE_LAYER_FILTER		831	20
+"Layer filter"
+;Layer filter option for purge option window
+
+STRE_PURGE_DIRECTION_MATCH		832	20
+"Direction match"
+;Direction match option for purge option window
+
+STRE_PURGE_DELETE_SEGMENTS		833	20
+"Delete segments"
+;Delete segments option for purge option window
+
+STRE_LOG_FILE_DEL_WARNING		834	30
+"Delete log file?"
+;Warning message
+
+STRE_LOG_FILE_PURGE_WARNING		835	30
+"Purge log file?"
+;Warning message
+
+STRE_ENTER_DATE		836	15
+"Enter date"
+;Prompt to enter date
+
+STRE_INVALID_DATE		837	15
+"Invalid date"
+;Invalid date message
+
+STRE_LIB_LOG_MAINT_OPT		838	16
+"Log Maintenance"
+;Sixth line of the library utilities display.
+
+STRE_LOG_DELETE		839	16
+"Delete log"
+;First line of the log maintenance display.
+
+STRE_LOG_PURGE		840	16
+"Purge to date"
+;Second line of the log maintenance display.
+
+STRE_LOG_EDIT		841	16
+"Edit log"
+;Third line of the log maintenance display.
+
+STRE_LOAD_LAST_DRWG		842	35
+"Load last drawing"
+;Start up option to load the most recently edited drawing
+
+STRE_USER_HATCH_AREA		843	20
+"Calculate area"
+;calculate the area of the tiles
+
+STRE_IMPLODE_WARNING		844	30
+"Create Insert?"
+; Create an insert after imploding data.
+
+STRE_NETWORK_UTIL		845	50
+"This utility only applies to networked libraries"
+; Network library utilities unavailable
+
+STRE_ENTER_OFFSET		846	30
+"Enter offset"
+;Enter offset of dimension line from key line
+
+STRE_REF_INSERTS_TITLE		847	20
+"Referenced Inserts"
+;Title for referenced inserts window
+
+STRE_REF_INSERTS_NOW		848	20
+"Now"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_LIB_CHANGE		849	20
+"Library change"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_REGENERATE		850	20
+"Regenerate"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_PAGE_CHANGE		851	20
+"Page change"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_ISOLATE		852	20
+"Isolate"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_VIEW_CHANGE		853	20
+"View change"
+;Option in referenced inserts window
+
+STRE_REF_INSERTS_WARN_UPDATE		854	20
+"Warn of update"
+;Option in referenced inserts window
+
+STRE_LIB_REF_INSERTS_OPT		855	20
+"Referenced Inserts"
+;Seventh line of the library utilities display.
+
+STRE_SNAP_DO_ALL		856	30
+"Rebuild For All Records"
+;Add snap window
+
+STRE_SNAP_DO_SELECTED		857	30
+"Select Records"
+;Add snap window
+
+STRE_SNAP_FROM_INSERTS		858	30
+"Snaps From Inserts"
+;Add snap window
+
+STRE_ZERO_LENGTH_LINE		859	35
+"Cannot draw line of zero length"
+;Error message for line drawing routines
+
+STRE_ZERO_RADIUS_ARC		860	35
+"Cannot draw arc of zero radius"
+;Error message for arc drawing routine
+
+STRE_ZERO_RADIUS_CIRCLE		861	35
+"Cannot draw circle of zero radius"
+;Error message for circle drawing routine
+
+STRE_XPLD_INSERT		862	30
+"Insert"
+; Xplode status window
+
+STRE_XPLD_FIT		863	30
+"Fit"
+; Xplode status window
+
+STRE_XPLD_UHATCH		864	30
+"User Hatch"
+; Xplode status window
+
+STRE_XPLD_DIM		865	30
+"Dimension"
+; Xplode status window
+
+STRE_XPLODE_OPTIONS		866	30
+"Explode these records"
+; Xplode status window
+
+STRE_SORT_DISPLAY_COUNT		867	20
+"Display data order"
+; Display order of data after Data sort
+
+STRE_STOP_OPERATION		868	25
+"Stop Operation?"
+; Warning window display for space bar break
+
+STRE_UPDATE_REFS		869	75
+"Old data format inserts exist in this Library - overwrite ?"
+;Warning - FILE has found V20 inserts on the library
+
+STRE_FILTER_TITLE		870	20
+"Speed Filter"
+;Word to denote AccuCADD inserts in a drawing, on the Layer Filter palette
+
+STRE_FILTER_TEXT		871	20
+"Text"
+;Word to denote AccuCADD text in a drawing, on the Speed filter
+
+STRE_FILTER_DIMENSION		872	20
+"Dims"
+;Word to denote AccuCADD dimensions in a drawing, on the Speed filter
+
+STRE_FILTER_INSERTS		873	20
+"Inserts"
+;Word to denote AccuCADD inserts in a drawing, on the Speed filter
+
+STRE_FILTER_HATCH		874	20
+"Hatch"
+;Word to denote AccuCADD hatches in a drawing, on the Speed filter
+
+STRE_FILTER_ELEMENTS		875	20
+"Elements"
+;Word to denote AccuCADD elements in a drawing, on the Speed filter
+
+STRE_FILTER_BOX_TEXT		876	20
+"Box Text"
+;Word to denote AccuCADD text as boxes in a drawing, on the Speed filter
+
+STRE_PREF_REVERSE_REP		877	20
+"Reverse Replay"
+;Option in VIEW:PREFERENCES window
+
+STRE_PREF_AUTO_REGEN		878	20
+"Auto Regeneration"
+;Option in VIEW:PREFERENCES window
+
+STRE_PLOT_CATALOGUE		879	20
+"Plotter Catalog"
+;Heading of plotter selection catalog
+
+STRE_EDIT_LAST_MAC		880	20
+"Edit Last"
+;Keystroke sub window
+
+STRE_PATH_MACS		881	20
+"Keystroke Macros"
+;Set Path menu - select to set keystroke path
+
+STRE_NO_MAC_WRITTEN		882	50
+"No keystroke macros have been recorded or replayed"
+;Warning for SETUP:KEYSTROKE:EDIT LAST when macro has not read / written
+
+STRE_MAC_ENTER_EXP		883	50
+"Enter expression"
+;Prompt for a keystroke macro expression
+
+STRE_MAC_GOTO		884	50
+"Enter label name to go to"
+;Prompt for a keystroke macro goto
+
+STRE_MAC_LABEL		885	50
+"Enter label name"
+;Prompt for a keystroke macro label
+
+STRE_VAR_DEFINE		886	50
+"Define <variable>=<value>"
+;Prompt for a variable definition
+
+STRE_MAC_ERROR_MESSAGE		887	50
+"Enter error message"
+;Prompt for a keystroke macro message
+
+STRE_ENTER_POSITION		888	50
+"Position (,handle) ="
+;Prompt for keypress when loading
+
+STRE_ENVIRO_VM_SPACE		889	20
+"VM space    :"
+;Used for environment window
+
+STRE_ENVIRO_EXTENDED		890	20
+"Extended mem:"
+;Used for environment window
+
+STRE_ENVIRO_EXPANDED		891	20
+"Expanded mem:"
+;Used for environment window
+
+STRE_ENVIRO_DISKSPACE		892	20
+"Disk space  :"
+;Used for environment window
+
+STRE_ENVIRO_VARIABLE		893	30
+"%s %2.2f %s (%lu%% used)"
+;Used for environment window - please change only the 'used' and the order
+
+STRE_ABORT_IMPORT		894	50
+"Abort Import and Wipe?"
+;Prompt for aborting import if user escaped from index page
+
+STRE_SHORT_OF_VM_SPACE		895	50
+"Short of VM space - delete disk files"
+;Short of VM space warning message
+
+STRE_CORRECT_INSERT		896	50
+"Correct Insert"
+;Warning on isolate
+
+STRE_EXPLODE_INSERTS		897	30
+"Explode All Inserts ?"
+
+STRE_MUST_BE_IN_A_FAST_VIEW		898	50
+"A display list is required for this option"
+;Trying to do a dynamic view with no display list
+
+STRE_NOTHING_TO_REDO		899	50
+"Nothing to redo"
+;Warning - nothing avilable for REDO
+
+STRE_BOOKING_NOT_AVAILABLE		900	60
+"Booking not available on non-networked system"
+;Selecting booking icon on non-networked system
+
+STRE_ENTER_EUROPE_DATE		901	30
+"Enter date (dd%cmm%cyy)"
+;Prompt to enter date European style
+
+STRE_ENTER_USA_DATE		902	30
+"Enter date (mm%cdd%cyy)"
+;Prompt to enter date American style
+
+STRE_ENTER_JAPAN_DATE		903	30
+"Enter date (yy%cmm%cdd)"
+;Prompt to enter date Japanese style
+
+STRE_PLT_NO_PORT		904	40
+"Plotter port not set"
+;Attempting to plot without having set plotter port
+
+STRE_INDEX_MAC		905	40
+"INSERT page %u position %u"
+;Report when find layer finds an insert
+
+STRE_OVERWRITE_DEPS		906	79
+"Overwrite existing inserts that may be used by other drawings ?"
+;An important warning when copying an index which has referenced inserts
+
+STRE_OVERWRITE_IDX		907	79
+"Overwrite existing index page that may contain other drawings ?"
+;An important warning when copying an index which exists on the target lib.
+
+STRE_GRP_MIRROR		908	15
+"Mirror"
+;Option in move or copy window
+
+STRE_EDIT_DIM_POSITION		909	35
+"Edit Position"
+;Option in edit dimension line window
+
+STRE_EDIT_DIM_STYLE		910	35
+"Edit Style"
+;Option in edit dimension line window
+
+STRE_PAPER_SIZE_OUT_OF_RANGE		911	35
+"Paper size out of range"
+;Error message when loading or inserting
+
+STRE_DATA_NOT_READABLE		912	35
+"Cannot read data"
+;Error message when system cannot understand data when loading or inserting
+
+STRE_CURVE_TOO_BIG		913	35
+"Curve contains too many sements"
+;Error message when curve is too large
+
+STRE_ENVIRO_UMB		914	40
+"Upper Memory: %u Kb used"
+;Toolkit - Environment window string for upper memory blocks
+
+STRE_VAR_PALNO		915	50
+"Define <variable>=(Palette Number)(Palette Index)"
+;Prompt for a variable definition from palette
+
+STRE_NO_IMP_PRODUCT		916	50
+"This drawing cannot be imported into this product"
+;Import file is wrong type for product
+
+STRE_LS_FILE_NOT_FOUND		917	50
+"%s not found - default line-style will be used"
+;Warning message when file containing user-defined line style not there
+
+STRE_LS_FILE_ERROR		918	60
+"Syntax error in %s - default line-style will be used"
+;Warning message when user-defined line style file contains syntax error
+
+STRE_ENVIRO_OVERLAY		919	50
+"Code cache  : %lu Kb used"
+;Environment window entry - memory used for overlay cache
+
+STRE_ENVIRO_DLIST		920	50
+"Display list: %lu Kb used"
+;Environment window entry - memory used for display list
+
+STRE_MEMORY_EXIT		921	60
+"Press any key to continue or ESC to exit "
+;Start up message when using the -m argument
+
+STRE_USER_LS_TITLE		922	25
+"UDLS styles"
+;UDLS selection title
+
+STRE_ENTER_LS_NO		923	25
+"Enter style number"
+;UDLS selection prompt
+
+STRE_SAVE_LS_WARNING		924	60
+"UDLS file will be overwritten - continue ?"
+;UDLS save warning
+
+STRE_NO_VALID_LS_DATA		925	50
+"Cannot produce UDLS: no valid data found"
+;UDLS save message
+
+STRE_ENTER_LS_NAME		926	40
+"Enter style name"
+;Prompt when clicking on status window
+
+STRE_ENTER_LS_LENGTH		927	40
+"Enter pattern length"
+;Prompt when clicking on status window
+
+STRE_LS_STRETCH_OPT		928	20
+"Stretch"
+;UDLS status window option
+
+STRE_LS_JOIN_1_OPT		929	20
+"Join within record"
+;UDLS status window option
+
+STRE_LS_JOIN_2_OPT		930	20
+"Join between records"
+;UDLS status window option
+
+STRE_LS_ORIENT_OPT		931	20
+"Maintain orientation"
+;UDLS status window option
+
+STRE_LS_SPINE_OPT		932	20
+"Bendy spine"
+;UDLS status window option
+
+STRE_LS_NAME		933	8
+"Name"
+;UDLS status window option
+
+STRE_LS_LENGTH		934	20
+"Pattern length"
+;UDLS status window option
+
+STRE_ENTER_MAC_NAME		935	30
+"Enter macro name"
+;For keystroke macro call
+
+STRE_VAR_FOR_ANSWER		936	30
+"Variable for answer"
+;For keystroke macro uwind
+
+STRE_WINDOW_ENTRY		937	50
+"Window entry (ESC to finish)"
+;For keystroke macro uwind
+
+STRE_ENTER_FILEPOS		938	50
+"Position ="
+;Prompt for keypress when filing
+
+STRE_ROTHER_CATALOG		939	20
+"Applications"
+;Title of run other file directory.
+
+STRE_INSERT_CATALOG		940	20
+"Insert Catalog"
+;Title of run other insert selection directory.
+
+STRE_SHOW_VARS		941	30
+"Show Variables"
+;Keystroke sub window
+
+STRE_SORT_CHOOSE_SORT_START		942	50
+"Choose start record"
+;For sort data option
+
+STRE_VAR_SWNO		943	50
+"Define <variable>=(Wind no.)(Row no.)(Col no.)"
+;Prompt for a variable definition from status window
+
+STRE_LS_SAVE_ATRBS_OPT		944	20
+"Use UDLS attributes"
+;UDLS status window option
+
+STRE_FILTER_USER_LS		945	15
+"Fast UDLS"
+;Fast UDLS option on the Speed filter
+
+STRE_KBD_TITLE		946	20
+"Keystroke options"
+;Keystroke macro status window
+
+STRE_KBD_NO_BLEEP		947	20
+"Bleeps"
+;Keystroke macro status window
+
+STRE_KBD_SINGLESTEP		948	20
+"Single Step"
+;Keystroke macro status window
+
+STRE_ENTER_FILENAME		949	20
+"Enter Filename"
+;For keystroke macro xwind
+
+STRE_ENTER_CHOICE		950	20
+"Enter Choice"
+;For keystroke macro ywind
+
+STRE_TITLE		951	20
+"Title ?"
+;User defined status window title
+
+STRE_XPLD_POLY		952	10
+"Curve"
+;Xplode status window
+
+STRE_ELLIPTICAL_DATA		953	50
+"Insert contains non-explodable elliptical data"
+;Warning  - An insert with arcs and squash (or shear) cannot be exploded
+
+STRE_ITEM_LINE		954	15
+"LINE"
+;Record name for find-item
+
+STRE_ITEM__ARC		955	15
+"ARC"
+;Record name for find-item
+
+STRE_ITEM_CIRC		956	15
+"CIRCLE"
+;Record name for find-item
+
+STRE_ITEM_POLY		957	15
+"CURVE"
+;Record name for find-item
+
+STRE_ITEM_STRM		958	15
+"STREAM"
+;Record name for find-item
+
+STRE_ITEM__HAT		959	15
+"HATCH"
+;Record name for find-item
+
+STRE_ITEM_UHAT		960	15
+"USER HATCH"
+;Record name for find-item
+
+STRE_ITEM_DIMN		961	15
+"DIMENSION"
+;Record name for find-item
+
+STRE_ITEM_TEXT		962	15
+"TEXT"
+;Record name for find-item
+
+STRE_ITEM_COPY		963	15
+"INSERT"
+;Record name for find-item
+
+STRE_ITEM__FIT		964	15
+"FIT INSERT"
+;Record name for find-item
+
+STRE_ITEM_TYPE		965	15
+"type"
+;Record type for find-item
+
+STRE_ITEM_LAYR		966	15
+"layer"
+;Record layer for find-item
+
+STRE_ITEM_LSTY		967	15
+"line-style"
+;Record line-style for find-item
+
+STRE_ITEM_LWEI		968	15
+"line-weight"
+;Record line-weight for find-item
+
+STRE_ITEM_COLO		969	15
+"color"
+;Record color for find-item
+
+STRE_ITEM_PNTA		970	15
+"end-point A"
+;First record end-point for find-item
+
+STRE_ITEM_PNTB		971	15
+"end-point B"
+;Second record end-point for find-item
+
+STRE_ITEM_PNTC		972	15
+"centre-point"
+;Record centre-point for find-item
+
+STRE_ITEM_RADI		973	15
+"radius"
+;Record radius for find-item
+
+STRE_ITEM_NO_P		974	15
+"points"
+;Number of points in record for find-item
+
+STRE_ITEM_PATN		975	15
+"pattern"
+;Hatch pattern for find-item
+
+STRE_ITEM__SPC		976	15
+"spacing"
+;Hatch pattern spacing for find-item
+
+STRE_ITEM_XSPC		977	15
+"X-spacing"
+;User-hatch pattern x-spacing for find-item
+
+STRE_ITEM_YSPC		978	15
+"Y-spacing"
+;User-hatch pattern y-spacing for find-item
+
+STRE_ITEM_INDX		979	15
+"index no."
+;Insert index no for find-item
+
+STRE_ITEM__MAC		980	15
+"macro no."
+;Insert macro no for find-item
+
+STRE_ITEM_XFLP		981	15
+"X-flip"
+;Insert x-flip for find-item
+
+STRE_ITEM_YFLP		982	15
+"Y-flip"
+;Insert y-flip for find-item
+
+STRE_ITEM_IVEC		983	15
+"I vector"
+;Insert i-vector for find-item
+
+STRE_ITEM_JVEC		984	15
+"J vector"
+;Insert j-vector for find-item
+
+STRE_ITEM__TAG		985	15
+"tag pos."
+;Insert or text tag-position for find-item
+
+STRE_ITEM_MTAG		986	15
+"macro tag pos."
+;Insert macro tag-position for find-item
+
+STRE_ITEM_FONT		987	15
+"font"
+;text font for find-item
+
+STRE_ITEM_OFFS		988	15
+"offset"
+;record offset for find-item
+
+STRE_ITEM_CPYS		989	15
+"inserts"
+;fit-record sub-records for find-item
+
+STRE_ITEM__DIM		990	15
+"dimension type"
+;type of dimension for find-item
+
+STRE_ITEM__ANG		991	15
+"angle"
+;angle subtended by arc for find-item
+
+STRE_ITEM_LENG		992	15
+"length"
+;length of element for find-item
+
+STRE_ITEM_DIAM		993	15
+"diameter"
+;diameter of arc or circle for find-item
+
+STRE_ITEM_ELEM		994	15
+"element"
+;element to which dimension is attached for find-item
+
+STRE_ITEM__NIB		995	15
+"NIB"
+;Record name for find-item
+
+STRE_ITEM_CORN		996	15
+"corner-point"
+;corner point of nib find-item
+
+STRE_ITEM__PNT		997	15
+"POINT"
+;Record name for find-item
+
+STRE_SQUASH		998	15
+"SQUASH"
+;Warning - before squashing data
+
+STRE_LICENCE_NO		999	30
+"Key Number: "
+;On title page
+
+STRE_DEMOS_LEFT		1000	30
+"Demonstrations Remaining: "
+;On title page
+
+STRE_GENERIC		1001	20
+"Generic"
+;For 256 color plotting
+
+STRE_NOT_THIS_PLOTTER		1002	50
+"Not Applicable to this plotting device"
+;For 256 color plotting
+
+STRE_USER_HATCH_FILL		1003	50
+"Fill"
+;Fill of user hatch
+
+STRE_ENABLES_LEFT		1004	50
+"Education Enables Remaining: "
+;On title page
+
+STRE_MAX_ON_NET		1005	50
+"There are already %d users on the network"
+;Hit the network maximum
+
+STRE_NULL_STRING		1006	2
+""
+;Null string
+
+STRS1_PARALLEL_CONTOUR_TITLE		1007	32
+"Contour Options"
+;Title of contour options window
+
+STRS1_PARALLEL_CONTOUR_OUTSIDE		1008	32
+"Detect Outer Plane?"
+;Special contour for surrounding profile
+
+STRS1_PARALLEL_CONTOUR_INSIDE		1009	32
+"Contours drawn inside?"
+;Draw the contours inside or outside the other profiles ?
+
+STRS1_PARALLEL_CONTOUR_OUT_CW		1010	32
+"Outside contours Clockwise?"
+;Draw the outside contours clockwise?
+
+STRS1_PARALLEL_CONTOUR_IN_CW		1011	32
+"Inside contours Clockwise?"
+;Draw the inside contours clockwise?
+
+STRS1_PARALLEL_CONTOUR_SPACING		1012	32
+"Contour spacing"
+; The spacing for contours
+
+STRS1_PARALLEL_CONTOUR_ENTER_SPACING		1013	20
+"Enter spacing"
+; Enter contour spacing
+
+STRS1_PARALLEL_CONTOUR_LAYER		1014	20
+"Contour Layer "
+; Contour layer
+
+STRS1_PARALLEL_CONTOUR_ENTER_LAYER		1015	20
+"Enter Layer ?"
+; Enter contour layer
+
+STRS1_PARALLEL_CONTOUR_DONT_INTERSECT		1016	50
+"Contour vectors do not intersect"
+; Failed to make a complete contour because of intersection problem
+
+STRS1_PARALLEL_CONTOUR_VECTOR_REVERESED		1017	40
+"Contour vector reversed"
+; A contour vector has become swapped in direction. Contour will be rejected
+
+STRL_SET_LIBPATH_CAPTION		1018	40
+"Set Library Path"
+; The dialog caption when setting a library path
+
+STRL_WINDOWS_ERROR		1019	40
+"Windows error no %d"
+; Message for internal windows error
+
+STRL_ENVIRO_TOTAL_RAM		1020	40
+"Total Ram"
+; Environment window total ram
+
+STRL_ENVIRO_FREE_RAM		1021	40
+"Free Ram"
+; Environment window free ram
+
+STRL_ENVIRO_TOTAL_VIRTUAL		1022	40
+"Total Virtual Memory"
+; Environment window
+
+STRL_ENVIRO_FREE_VIRTUAL		1023	40
+"Free Virtual Memory"
+; Environment window
+
+STRL_ENVIRO_PAGED_DISK		1024	40
+"Memory paged to disk"
+; Environment window
+
+STRL_WARNING_LAYER_TABLE_DELETE		1025	80
+"Are you sure you want to delete entries? "
+; Confirmation deleting an entry from the layer table
+
+STRL_ABOUT_PERCENT_RESOURCE_FREE		1026	40
+"%u%% Memory Resource Free "
+; About window
+
+STRL_ABOUT_PHYSICAL_MEMORY		1027	40
+"%u Mbytes physical memory "
+; About window
+
+STRL_ABOUT_FREE_MEMORY		1028	40
+"%u Mbytes free physical memory "
+; About window
+
+STRL_D2R_WINDOW_TITLE		1029	40
+"Translating from %s"
+; Import DXF: Progress window title 
+
+STRL_D2R_DEF_UNIT_SIZE		1030	5
+"1mm"
+;Import DXF: default size of units
+
+STRL_D2R_L_TITLE		1031	50
+"DXF to RDF"
+;Import DXF: This is the title which appears during translation.
+
+STRL_D2R_SELECT_STYLE		1032	50
+"Select layer weight and style"
+;Import DXF: This is the title which appears during weight and style selection.
+
+STRL_D2R_LAY_NAME		1033	12
+"Layer name"
+;Import DXF: This is column block heading during weight and style selection.
+
+STRL_D2R_LAY_COLOR		1034	14
+"Layer color"
+;Import DXF: This is column block heading during weight and style selection.
+
+STRL_D2R_LAY_LINETYPE		1035	21
+"Layer linetype"
+;Import DXF: This is column block heading during weight and style selection.
+
+STRL_D2R_L_WEIGHT		1036	8
+"Weight"
+;Import DXF: This is column block heading during weight and style selection.
+
+STRL_D2R_L_STYLE		1037	12
+"Style"
+;Import DXF: This is column block heading during weight and style selection.
+
+STRL_D2R_NO_OPEN		1038	25
+"Can't open %s"
+;Import DXF: Second %s is the filename.
+
+STRL_D2R_NO_MEM		1039	50
+"Out of memory"
+;Import DXF: Insufficient memory message.
+
+STRL_D2R_MANY_MACS		1040	50
+"Too many blocks"
+;Import DXF: Too many blocks of DXF data.
+
+STRL_D2R_BAD_FORMAT		1041	50
+"Invalid DXF file format"
+;Import DXF: Corrupted file.
+
+STRL_D2R_MANY_LTYP		1042	50
+"Too many line types"
+;Import DXF: More than 32 DXF linetypes.
+
+STRL_D2R_MANY_LAYR		1043	50
+"Too many layers"
+;Import DXF: More than 32 DXF layers.
+
+STRL_D2R_TOO_COMPLEX		1044	30
+"%s too complex"
+;Import DXF: %s is 'Insert' or 'New data'.
+
+STRL_D2R_ENTER_CHOICE		1045	15
+"Enter Choice"
+;Import DXF: prompt to enter layer-number etc.
+
+STRL_D2R_L_PASS1		1046	30
+"Pass 1 for %s"
+;Import DXF: %s is pathname and filename.
+
+STRL_D2R_L_PASS2		1047	30
+"Pass 2 for %s"
+;Import DXF: %s is pathname and filename.
+
+STRL_D2R_NUM_FOLLOW		1048	50
+"Number followed by:"
+;Import DXF: Appears two lines below 'Enter size of Autocad drawing unit'
+
+STRL_D2R_ENTER_SIZE		1049	40
+"Enter size of DXF drawing unit"
+;Import DXF: Prompts for unit size eg. '1mm', '12ft'
+
+STRL_D2R_AUTO_VERS		1050	30
+"DXF Version %s"
+;Import DXF: is version number from DXF file.
+
+STRL_D2R_S_NEW_DATA		1051	50
+"New Data"
+;Import DXF: New data message.
+
+STRL_D2R_TEXT_LARGE		1052	50
+"Text too large !"
+;Import DXF: Error message if DXF text is too large.
+
+STRL_D2R_L_INSERT		1053	20
+"Insert"
+;Import DXF: Concatenated with 'too complex' to form error message.
+
+STRL_D2R_L_NEW_DATA		1054	20
+"New data"
+;Import DXF: Concatenated with 'too complex' to form error message.
+
+STRL_D2R_LIC_CANCEL		1055	50
+"Translation aborted !"
+;Import DXF: Status message for failed transfer.
+
+STRL_D2R_MANY_ALLOCS		1056	30
+"Too many allocs"
+;Import DXF: Error message for failure of memory allocation.
+
+STRL_D2R_LTYPE_ID		1057	20
+"LTYPE_"
+;Import DXF: Prefix for DXF line-type converted from normal RDF line-styles
+
+STRL_D2R_PL_LTYPE_ID		1058	20
+"UDLS_"
+;Import DXF: Prefix for DXF line-type converted from RDF user line-style
+
+STRL_D2R_REMARK		1059	40
+"Converted From DXF"
+;Import DXF: RDF header remark string.
+
+STRL_DXF_CATALOG		1060	40
+"DXF Catalog"
+; DXF File catalog title
+
+STRL_R2D_TITLE		1061	40
+"Translating to %s"
+;Export DXF: Title for progress window
+
+STRL_R2D_NO_M_FOR_HAT		1062	30
+"Insufficient memory for hatch"   
+;Error message
+
+STRL_R2D_HAT_CON_EA		1063	30
+"hatch contains elliptical arcs" 
+;Error Message
+
+STRL_R2D_A_TO		1064	7
+" to "
+;A term equal to the english term 'to', used in the sense of travel (a to b).
+
+STRL_R2D_A_FROM		1065	20
+"From "
+;A term equal to the english 'from' used in the sense 'from' a 'to' b.
+
+STRL_R2D_A_WRITING		1066	12
+"Writing "	
+;A term meaning putting data into a file - english is 'writing'
+
+STRL_R2D_A_CANT_OPEN		1067	12
+"Can't open "
+;Error message - a file cannot be read.  Printed followed by the file name.
+
+STRL_R2D_A_PASS1		1068	20
+"Pass 1 for "
+;Status message - indicates first pass through the file
+
+STRL_R2D_A_PASS2		1069	20
+"Pass 2 for "
+;Status message - indicates second pass on the file
+
+STRL_R2D_DXF_2NTMP_DN		1070	25
+"  2\nTMP_%d\n"
+;Translate 'tmp' - a dxf term, again and leave the rest alone !!!
+
+STRL_R2D_DXF_2NLAYER_DN		1071	30
+"  2\nLAYER_%d\n"
+;Translate 'layer' - the dxf term, again, and leave the rest alone !!!
+
+STRL_R2D_DXF_8NLAYER_DN		1072	30
+"  8\nLAYER_%d\n"
+;Translate 'layer' - the dxf term, again, and leave the rest alone !!!
+
+STRL_R2D_P_WRIT_ENT		1073	30
+"Writing entities"
+;Status message - program is writing out the dxf entity records.
+
+STRL_R2D_E_V1_RDF		1074	30
+"Not VERS1 RDF file"
+;Error message - the RDF file is not version 1.  Do not translate 'VERS1 RDF'
+
+STRL_R2D_E_NO_MEM		1075	30
+"Insufficient memory"
+;Error message - the computer hasn't enough memory for the conversion process
+
+STRL_R2D_E_BAD_REC		1076	40
+"Invalid record code"
+;Error message - invalid RDF record, possibly meaning a corrupt file
+
+STRL_R2D_E_BAD_INSERT		1077	40
+"Unrecognised insert"
+;Error message - there is an invalid insert in the RDF file.  Corruption ?
+
+STRL_R2D_E_BAD_WRITE		1078	40
+"Write to file error"
+;Error message - data couldn't be put into a file
+
+STRL_R2D_E_ABORT		1079	40
+"Translation aborted !"
+;Error message - the translator program has to give up due to errors
+
+STRL_R2D_DXF_2NBLOCK66LXDN		1080	35
+"  2\nBLOCK_%6.6lx_%d\n"
+;Translate 'block' - the dxf term, again, and leave the rest alone !!!
+
+STRL_R2D_E_HANDLES		1081	40
+"Too many insert handles"
+;Error message - There are too many HANDLEs in the RDF file
+
+STRL_R2D_P_MKBLOCK		1082	40
+"Creating block   : TMP_%d"
+;Prompt message - TMP is the DXF term.
+
+STRL_R2D_P_KEYCONT		1083	40
+"Press any key to continue "
+;Prompt message - the program will wait until a key is struck
+
+STRL_R2D_E_BADARGS		1084	40
+"Invalid number of arguments"
+;Error message - the RDF-DXF program was run incorrectly
+
+STRL_R2D_P_WRBLOCK		1085	40
+"Writing block    : BLOCK_%6.6lx_%d"
+;Prompt message - BLOCK is the DXF term
+
+STRL_R2D_PROG_NAME		1086	50
+"RDF to DXF data translation utility"
+;Prompt message to say what the program does to the user
+
+STRL_R2D_DXF_LTS_A0		1087	20
+"CONTINUOUS"
+;DXF term, meaning 'solid line'
+
+STRL_R2D_DXF_LTS_A1		1088	20
+"LTYPE_1"
+;DXF term for linetype 1
+
+STRL_R2D_DXF_LTS_A2		1089	20
+"LTYPE_2"
+;DXF term for linetype 2
+
+STRL_R2D_DXF_LTS_A3		1090	20
+"LTYPE_3"
+;DXF term for linetype 3
+
+STRL_R2D_DXF_LTS_A4		1091	20
+"LTYPE_4"
+;DXF term for linetype 4
+
+STRL_R2D_DXF_LTS_A5		1092	20
+"LTYPE_5"
+;DXF term for linetype 5
+
+STRL_R2D_DXF_LTS_A6		1093	20
+"LTYPE_6"
+;DXF term for linetype 6
+
+STRL_R2D_DXF_LTS_A6		1094	20
+"LTYPE_7"
+;DXF term for linetype 7
+
+STRL_R2D_T_RDF		1095	4
+"RDF"
+;Table header : Data type RDF
+
+STRL_R2D_T_DXF		1096	4
+"DXF"
+;Table header : Data type DXF
+
+STRL_R2D_T_COL		1097	4
+"COL"
+;Table header : Abbrieviation for color
+
+STRL_R2D_P_CHANGE_COLOUR		1098	35
+"Change Color Assignments? (y/n)"
+;Prompt : For to change color assignments
+
+STRL_R2D_P_ENTER_COLOUR		1099	30
+"Enter Color Number"
+;Prompt : For to enter number.
+
+STRL_R2D_P_ESC_CONTINUE		1100	30
+"ESC to continue"
+;Prompt : For to continue.
+
+STRL_R2D_E_V2_RDF		1101	30
+"Not VERS2 or VERS4 RDF file"
+;Error message - the RDF file is not version 2.  Do not translate 'VERS2 RDF'
+
+STRL_R2D_W_V4_NEW_1		1102	30
+"Can't open RDF file"
+;New warnings for Version Four : Can't open the RDF file.
+
+STRL_R2D_W_V4_NEW_4		1103	30
+"Don't Know : %x at %x"
+;New warnings for Version Four : Encounted unrecognised record type.
+
+STRL_R2D_W_V4_NEW_6		1104	30
+"Can't read RDF file"
+;New warnings for Version Four : Can't read the RDF file.
+
+STRL_R2D_P_PRECISION		1105	30
+"Enter decimal precision"
+;Decimal precision prompt
+
+STRL_R2D_DXF_ULS		1106	20
+"UDLS_"
+;DXF term for linetype corresponding to user line-style
+
+STRL_TIP_DATA_SNAP_ON		1107	40
+"Data snap on"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_DYNAMIC		1108	40
+"snap cursor"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_THOROUGH		1109	40
+"Find best"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_LOCK			1110	40
+"Lock"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_END_POINT       	1111	40
+"End points"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_TANGENT		1112	40
+"Tangent"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_PERPENDICULAR	1113	40
+"Perpendicular"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_MIDPOINT		1114	40
+"Midpoint"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_NEAR_POINT		1115	40
+"Nearest point on a vector"
+;Tip for data snap 
+
+STRL_TIP_DATA_SNAP_CURVES		1116	40
+"Snap to curves"
+;Tip for data snap 
+
+STRL_VIEW_OPTIONS			1117	40
+"View Options"
+;Title for view options window
+
+STRL_PRINT_INDEX_PAGE_HEADER		1118	40
+"Index %u Name %s Updated %s"
+;String for index page printing
+
+STRL_OPTION_ANGLE_DIRECTION		1119	40
+"Angle direction clockwise"
+;String for precision window angle direction
+
+STRL_TZONE_SIZE				1120	32
+"Trap Zone (1-32 pixels)"
+; Snap option string 
+
+STRL_SNAPS_SAVED			1121	32
+"Save snaps on File"
+; Snap option string 
+
+STRL_SNAPS_LOAD				1122	32
+"Rebuild snaps on Load"
+; Snap option string 
+
+STRL_SNAPS_SETUP			1123	40
+"Snap Setup"
+; Snap options tile string 
+
+STRL_INDEX_CATALOGUE_NUMBER		1124	20
+"Number"
+; Index Catalog column header
+ 
+STRL_INDEX_CATALOGUE_NAME	      	1125	20
+"Name"
+; Index Catalog column header
+ 
+STRL_INDEX_CATALOGUE_VERSION		1126	20
+"Version"
+; Index Catalog column header
+ 
+STRL_INDEX_CATALOGUE_CREATED		1127	20
+"Created"
+; Index Catalog column header
+
+ STRL_INDEX_CATALOGUE_UPDATED		1128	20
+"Updated"
+; Index Catalog column header
+ 
+STRL_BACKUP_DELETE_FILES		1129	40
+"Delete all Backup files?"
+; Warning when deleting backup files
+ 
+STRL_CLIPBOARD_COPY			1130	40
+"Data copied to clipboard"
+; Data has been copied to clipboard
+ 
+STRL_CHOOSE_DRAWING_COLOUR		1131	60
+"Select drawing color"
+; Title for drawing color dialog 
+
+STRL_CHOOSE_BACK_COLOUR			1132	60
+"Select paper color"
+; Title for paper color dialog 
+
+STRL_CHOOSE_CURSOR_COLOUR		1133	60
+"Select cursor color"
+; Title for cursor color dialog 
+
+STRL_DISPLAY_CHANGED 			1134	80
+"Please start the program again to reflect display changes"
+; Message if user changes display settings while in program
+
+STRL_SCRATCHPAD				1135	80
+"Scratchpad"
+; Scratchpad name for window titles 
+
+STRL_PAGE_NO 				1136	80
+"Page %d"
+; Page string for window titles
+
+STRL_FILE_DIALOG_FILES 			1137	16
+"Files" 
+; String that appears in File Catalog Dialogs
+
+STRE_CONTROL_FILE_CATALOG		1138 	64
+"Control File Catalog"
+; Header for attribute control file catalog
+
+STRE_ATTRIBUTE_OUTPUT			1139	64
+"Attribute Extraction Output File"
+; Header for output attribute filename
+
+
+STRE_AccuCADDDATA_NOT_FOUND	    	1140	80
+"Cannot Start Attribute Extraction Module"
+; Cannot start the AccuCADD-DATA module 
+
+STRE_AccuCADDDATA_EXTRACTION_FAILED	1141	80
+"Attribute Extraction Failed"
+; Attribute extraction failed
+
+STRL_D2R_SCRIPT_CATALOG			1142	80
+"Script File Catalog"
+; Header for Script file catalog for DXF to RDF 
+
+STRE_DELETE_INDEX_WARNING		1143	80
+"Delete Index %u on path %s?"
+; Delete index warning
+
+STRL_LYR_T_ATTRIBUTE			1144	8
+"A"
+;Layer table header - Attribute
+
+STRL_LYR_T_CONTOUR			1145	8
+"C"
+;Layer table header - Contour
+
+STRL_OLE_UPDATE				1146	20
+"Update %s" 
+;File Menu item for OLE Embedding
+
+STRL_OLE_EXIT				1147	20
+"Exit to %s"
+;File Menu item for OLE Embedding
+
+STRL_EXCEPTION_WARNING			1148	120
+"The operating system has detected an exception\nPlease try to save work and exit AccuCADD"
+;An error has been trapped that is probably caused by a bug (or lack of memory)
+
+STRE_IDX_NUMBER_EXISTS			1149	80
+"Index %u already exists"
+;The index the user asked the program to create already exists
+
+STRE_OVERWRITE_IDX_NUMBER		1150	80
+"Overwrite existing index %u that may contain other drawings ?"
+;An important warning when copying an index which exists on the target lib.
+
+STRE_DEPS_NUMBER_EXIST			1151	80
+"Overwrite components of index %u exist on destination library?"
+;Warning - inserts of the drawings on the index being copied exist on the target
+
+STRL_HPGL_IMPORT			1152	80
+"Importing HPGL from %s"
+; Import HPGL: Progress window title 
+
+STRL_ERROR_HPGL_IMPORT			1153	80
+"Error Converting HPGL"
+; Most likely disk full or corrupt HPGL
+
+STRL_LYR_T_LW				1154	4
+"LW"
+;Layer table header - layer lineweight
+
+STRL_DOCUMENT_POSITION			1155	64
+"Index %u Box %u"
+;Text used in caption of a page
+
+STRE_LYR_S_LS				1156	50
+"Current Layer is set to a single line weight"
+;Active Layer is single weight - Can't reselect from palette.
+
+STRL_OLEUPDATE				1157	50
+"Update"
+;String for menu item Update when AccuCADD is an OLE server
+
+STRL_SEARCHLIB_INDEX			1158	12
+"Index"
+; String in column header of search libary 
+
+STRL_SEARCHLIB_BOX			1159	8
+"Box"
+; String in column header of search libary 
+
+STRL_SEARCHLIB_DATE			1160	10
+"Date"
+; String in column header of search libary 
+
+STRL_TEXTEDITOR_FILE	       		1161	32
+"File"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_OPEN	       		1162	32
+"Open"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_SAVE	       		1163	32
+"Save"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_EDIT	       		1164	32
+"Edit"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_COPY	       		1165	32
+"Copy	Ctrl+C"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_PASTE	       		1166	32
+"Paste	Ctrl+V"
+; Menu string for text editor"
+
+STRL_TEXTEDITOR_CLEAR	       		1167	32
+"Clear	Ctrl+X"
+; Menu string for text editor"
+ 
+STRL_LOAD_DRAWING_LOADED		1168	80
+"Drawing Loaded on page %d\nContinue?"
+; Warning that drawing is already on another page
+
+STRL_STEP_MACRO				1169	40
+"Step Macro"
+; String for menu entry Step Macro
+
+STRL_PAPER_BORDER			1170	40
+"Paper border in pixels"
+; String for input window
+
+STRL_NO_HIDE_ACTIVE			1188	80
+"Cannot hide active layer"
+; String for hide layer function
+
+STRL_INSERT_INFORMATION			1198	80
+"Insert Information"
+; String for overfile window

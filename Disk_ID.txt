@@ -1,0 +1,21 @@
+Accucadd
+V100.0H C06
+20020423
+Additional single key accelerators.
+Desktop shortcuts to on-line (www) documentation.
+Won't over-write pre-existing library in destination folder.
+SaveSetup utility on CD (does not get installed).
+
+V100.0H C05
+20020314
+Relative library path .\lib
+
+V100.0H C04
+20020227
+Additional single key accelerators installed
+
+V100.0H C03
+20010827
+Contains extended library files
+Initial default setting updated
+Has Robo20 style single key accelerators 
